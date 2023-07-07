@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /old/
+Disallow: /shared/
+
+Sitemap: https://www.matteotona.com/sitemap.xml
