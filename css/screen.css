@@ -1162,7 +1162,7 @@ section.worknav a{
   white-space: normal;
   /* filter: alpha(opacity=0);
   opacity: 0; */
-  line-break: auto
+  line-break: auto;
   right: 36px;
   width: 130px;
   text-align: center;
