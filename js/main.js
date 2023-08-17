@@ -59,7 +59,7 @@ Barba.Dispatcher.on('newPageReady', function(e) {
     anchor[i].className = "";
   }
   for (var i = 0; i < anchor.length; i++) {
-    var eval = anchor[i].href.split('/')[3];
+    var eval = anchor[i].href.split('/')[2];
     if (eval == current) {
       anchor[i].className = "active";
     }
@@ -69,7 +69,7 @@ Barba.Dispatcher.on('newPageReady', function(e) {
     anchor2[i].className = "";
   }
   for (var i = 0; i < anchor2.length; i++) {
-    var eval2 = anchor2[i].href.split('/')[3];
+    var eval2 = anchor2[i].href.split('/')[2];
     if (eval2 == current2) {
       anchor2[i].className = "active";
     }
