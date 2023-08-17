@@ -10,7 +10,7 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-RewriteRule ^(.*)$ /index.html?path=$1 [NC,L,QSA]
+RewriteRule ^(.*)$ /index?path=$1 [NC,L,QSA]
 
 
 </IfModule>
