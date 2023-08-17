@@ -10,5 +10,5 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-RedirectMatch 301 ^/$ https://www.matteotona.com/index
+RedirectMatch 301 ^/$ https://www.matteotona.com/index.html
 </IfModule>
