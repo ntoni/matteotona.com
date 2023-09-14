@@ -6,10 +6,6 @@
     SetOutputFilter DEFLATE
   </FilesMatch>
 
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-
-RewriteRule ^(.*)$ /index?path=$1 [NC,L,QSA]
 
 
 </IfModule>
