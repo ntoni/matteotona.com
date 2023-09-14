@@ -6,5 +6,8 @@
     SetOutputFilter DEFLATE
   </FilesMatch>
 
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.matteotona.com [NC]
+RewriteRule (.*) https://matteotona.com/index [L,R=301]
 
 </IfModule>
