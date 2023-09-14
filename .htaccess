@@ -12,10 +12,9 @@
 
 RewriteEngine On
 RewriteBase /
-
-RewriteCond %{REQUEST_URI} ^$
-RewriteCond %{HTTP_HOST} ^(www\.)?matteotona\.com
-RewriteRule ^$ http://%{HTTP_HOST}/index.html [L,R=301]
+RewriteCond %{HTTP_HOST} ^matteotona.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.matteotona.com$
+RewriteRule (.*)$ https://www.matteotona.com/index.html [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
