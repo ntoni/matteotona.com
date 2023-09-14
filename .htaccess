@@ -6,6 +6,5 @@
     SetOutputFilter DEFLATE
   </FilesMatch>
 
-DirectoryIndex /index.html
 
 </IfModule>
