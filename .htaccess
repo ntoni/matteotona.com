@@ -6,6 +6,10 @@
     SetOutputFilter DEFLATE
   </FilesMatch>
 
+
+</IfModule>
+<IfModule mod_rewrite.c>
+
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^matteotona.com [NC,OR]
 RewriteCond %{HTTP_HOST} ^www.matteotona.com [NC]
