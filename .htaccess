@@ -7,7 +7,7 @@
   </FilesMatch>
 
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.matteotona.com [NC]
+RewriteCond %{HTTP_HOST} ^matteotona.com [NC]
 RewriteRule (.*) https://matteotona.com/index [L,R=301]
 
 </IfModule>
