@@ -8,6 +8,6 @@
 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^matteotona.com [NC]
-RewriteRule (.*) https://matteotona.com/index [L,R=301]
+RewriteRule (.*) https://www.matteotona.com/index [L,R=301]
 
 </IfModule>
