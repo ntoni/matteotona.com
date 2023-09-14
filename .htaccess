@@ -13,6 +13,6 @@
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^matteotona.com [NC,OR]
 RewriteCond %{HTTP_HOST} ^www.matteotona.com [NC]
-RewriteRule ^$ https://%{HTTP_HOST}/index.html [L,R=301]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/index.html [L,R=301]
 
 </IfModule>
