@@ -6,6 +6,6 @@
     SetOutputFilter DEFLATE
   </FilesMatch>
 
-
+DirectoryIndex /index
 
 </IfModule>
