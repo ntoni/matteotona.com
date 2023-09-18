@@ -96,6 +96,16 @@ Barba.Dispatcher.on('newPageReady', function(e) {
   })
 })
 
+// ------------------ MENU CHECK ------------------//
+
+var $elem = $('body');
+if (!$elem.attr('class')) {
+    $('sub-menu').addClass('visibleopacity');
+}
+ if ($('body').hasClass("nightmode")) {
+    $('sub-menu').addClass('visibleopacity');
+ }
+
 // ------------------ NIGHTMODE ------------------- //
 
 $(document).on('click', '#nightmode', function() {
