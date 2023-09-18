@@ -112,7 +112,7 @@ if ($elem.hasClass("nightmode")) {
 else{
 	$('sub-menu').removeClass('visibleopacity');	
 }
-}
+});
 
 // ------------------ NIGHTMODE ------------------- //
 
