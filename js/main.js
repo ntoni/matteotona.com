@@ -105,7 +105,7 @@ if (!$elem.attr('class')) {
 }
 else{
 }
-if ($elem.hasClass("nightmode")) {
+if ($('body').hasClass("nightmode")) {
     $('sub-menu').addClass('visibleopacity');
  }
 else{
