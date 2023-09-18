@@ -98,6 +98,7 @@ Barba.Dispatcher.on('newPageReady', function(e) {
 
 // ------------------ MENU CHECK ------------------//
 
+$(document).ready(function() {
 var $elem = $('body');
 if (!$elem.attr('class')) {
     $('sub-menu').addClass('visibleopacity');
@@ -105,6 +106,7 @@ if (!$elem.attr('class')) {
  if (!$elem.hasClass("nightmode")) {
     $('sub-menu').addClass('visibleopacity');
  }
+}
 
 // ------------------ NIGHTMODE ------------------- //
 
