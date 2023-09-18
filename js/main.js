@@ -103,7 +103,7 @@ var $elem = $('body');
 if (!$elem.attr('class')) {
     $('sub-menu').addClass('visibleopacity');
 }
- if (!$elem.hasClass("nightmode")) {
+ if ($elem.hasClass("nightmode")) {
     $('sub-menu').addClass('visibleopacity');
  }
 }
