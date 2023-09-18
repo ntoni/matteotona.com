@@ -11,6 +11,6 @@
 <IfModule mod_rewrite.c>
 
 RewriteEngine On
-Redirect / /index.html
+Redirect https://www.matteotona.com https://www.matteotona.com/index
 
 </IfModule>
