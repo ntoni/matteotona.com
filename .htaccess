@@ -6,11 +6,6 @@
     SetOutputFilter DEFLATE
   </FilesMatch>
 
-
-</IfModule>
-<IfModule mod_rewrite.c>
-
-RewriteEngine On
-Redirect https://www.matteotona.com https://www.matteotona.com/index
+Redirect 301 https://www.matteotona.com https://www.matteotona.com/index
 
 </IfModule>
