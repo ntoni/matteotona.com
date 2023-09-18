@@ -98,19 +98,17 @@ Barba.Dispatcher.on('newPageReady', function(e) {
 
 // ------------------ MENU CHECK ------------------//
 
-$(document).ready(function() {
 var $elem = $('body');
+$(document).ready(function() {
 if (!$elem.attr('class')) {
     $('sub-menu').addClass('visibleopacity');
 }
 else{
-	$('sub-menu').removeClass('visibleopacity');
 }
 if ($elem.hasClass("nightmode")) {
     $('sub-menu').addClass('visibleopacity');
  }
 else{
-	$('sub-menu').removeClass('visibleopacity');	
 }
 });
 
