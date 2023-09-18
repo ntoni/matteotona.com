@@ -581,9 +581,14 @@ span.desc{
   transition: all 0.2s;
   display: none
 }
-body.personal .intro-container{
+body.personal .intro-container,
+.hiddenopacity{
   opacity:0;
   visibility: hidden;
+}
+.visibleopacity{
+    opacity: 1;
+    visibility: initial;
 }
 .intro-box{
   /* padding: 15px 25px;
