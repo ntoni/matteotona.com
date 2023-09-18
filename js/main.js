@@ -103,9 +103,15 @@ var $elem = $('body');
 if (!$elem.attr('class')) {
     $('sub-menu').addClass('visibleopacity');
 }
- if ($elem.hasClass("nightmode")) {
+else{
+	$('sub-menu').removeClass('visibleopacity');
+}
+if ($elem.hasClass("nightmode")) {
     $('sub-menu').addClass('visibleopacity');
  }
+else{
+	$('sub-menu').removeClass('visibleopacity');	
+}
 }
 
 // ------------------ NIGHTMODE ------------------- //
