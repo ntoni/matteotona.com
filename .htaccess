@@ -11,13 +11,8 @@
 <IfModule mod_rewrite.c>
 
 RewriteEngine On
-RewriteBase /
 RewriteCond %{HTTP_HOST} ^matteotona.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www.matteotona.com$
 RewriteRule (.*)$ https://www.matteotona.com/index.html [R=301,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)\.html$ /$1 [L,R=301] 
 
 </IfModule>
