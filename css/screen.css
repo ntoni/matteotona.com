@@ -587,8 +587,8 @@ body.personal .intro-container,
   visibility: hidden;
 }
 .visibleopacity{
-    opacity: 1;
-    visibility: initial;
+    opacity: 1!important;
+    visibility: initial!important;
 }
 .intro-box{
   /* padding: 15px 25px;
