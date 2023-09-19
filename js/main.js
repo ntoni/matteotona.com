@@ -103,6 +103,9 @@ $(document).ready(function() {
   if (!$elem.attr('class') || $elem.hasClass('nightmode')) {
     $('.sub-menu').addClass('visibleopacity');
   }
+  else {
+    $('body').removeClass('visibleopacity');
+  }
 });
 
 // ------------------ NIGHTMODE ------------------- //
