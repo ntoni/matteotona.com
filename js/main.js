@@ -99,6 +99,16 @@ Barba.Dispatcher.on('newPageReady', function(e) {
 // ------------------ MENU CHECK ------------------//
 
 var $elem = $('body');
+
+$(document).ready(function() {
+  if (!$elem.attr('class') || $elem.hasClass('nightmode')) {
+    $('.sub-menu').addClass('visibleopacity');
+  } else {
+    $('.sub-menu').removeClass('visibleopacity');
+  }
+});
+
+// Event listener for body class changes
 $elem.on('DOMAttrModified', function() {
   if (!$elem.attr('class') || $elem.hasClass('nightmode')) {
     $('.sub-menu').addClass('visibleopacity');
@@ -106,6 +116,7 @@ $elem.on('DOMAttrModified', function() {
     $('.sub-menu').removeClass('visibleopacity');
   }
 });
+
 
 // ------------------ NIGHTMODE ------------------- //
 
