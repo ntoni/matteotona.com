@@ -101,17 +101,22 @@ Barba.Dispatcher.on('newPageReady', function(e) {
 var $elem = $('body');
 
 $(document).ready(function() {
-  if (!$elem.attr('class') || $elem.hasClass('nightmode')) {
+  if (!$elem.hasClass('index')) {
+    $('.sub-menu').addClass('visibleopacity');
+  } else if ($elem.attr('class') === 'nightmode') {
     $('.sub-menu').addClass('visibleopacity');
   } else {
     $('.sub-menu').removeClass('visibleopacity');
   }
 });
 
+
 // Event listener for body class changes
 $elem.on('DOMAttrModified', function() {
 	console.log('Inside DOMattr');
-  if (!$elem.attr('class') || $elem.hasClass('nightmode')) {
+  if (!$elem.hasClass('index')) {
+    $('.sub-menu').addClass('visibleopacity');
+  } else if ($elem.attr('class') === 'nightmode') {
     $('.sub-menu').addClass('visibleopacity');
   } else {
     $('.sub-menu').removeClass('visibleopacity');
