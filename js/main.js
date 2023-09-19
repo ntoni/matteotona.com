@@ -103,11 +103,9 @@ $(document).ready(function() {
 if (!$elem.attr('class')) {
     $('sub-menu').addClass('visibleopacity');
 }
-else{
-}
-if ($('body').hasClass("nightmode")) {
+else if ($('body').hasClass("nightmode")) {
     $('sub-menu').addClass('visibleopacity');
- }
+}
 else{
 }
 });
