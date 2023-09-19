@@ -110,6 +110,7 @@ $(document).ready(function() {
 
 // Event listener for body class changes
 $elem.on('DOMAttrModified', function() {
+	console.log('Inside DOMattr');
   if (!$elem.attr('class') || $elem.hasClass('nightmode')) {
     $('.sub-menu').addClass('visibleopacity');
   } else {
