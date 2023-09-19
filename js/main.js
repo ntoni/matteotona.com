@@ -104,7 +104,7 @@ $(document).ready(function() {
     $('.sub-menu').addClass('visibleopacity');
   }
   else {
-    $('body').removeClass('visibleopacity');
+    $('sub-menu').removeClass('visibleopacity');
   }
 });
 
