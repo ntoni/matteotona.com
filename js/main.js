@@ -100,11 +100,13 @@ Barba.Dispatcher.on('newPageReady', function(e) {
 
 var $elem = $('body'); // Get the DOM element from the jQuery object
 
+
 $(document).ready(function() {
   function handleBodyClassChange() {
     var bodyClass = $('body').attr('class');
     var isNightMode = /\bnightmode\b/.test(bodyClass);
-    $('nav').toggleClass('visibleopacity', bodyClass === "" || isNightMode);
+    var hasNonIndexClass = /\b(?!index\b)\w+\b/.test(bodyClass);
+    $('nav').toggleClass('visibleopacity', !isNightMode || (isNightMode && !hasNonIndexClass));
   }
 
   // Listen for changes to the body class
@@ -113,6 +115,7 @@ $(document).ready(function() {
   // Initially trigger the logic
   handleBodyClassChange();
 });
+
 
 
 
