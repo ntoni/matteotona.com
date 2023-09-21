@@ -98,7 +98,7 @@ Barba.Dispatcher.on('newPageReady', function(e) {
 
 // ------------------ MENU CHECK ------------------//
 
-var $elem = $('body')[0]; // Get the DOM element from the jQuery object
+var $elem = $('body'); // Get the DOM element from the jQuery object
 
 $(document).ready(function() {
   if (!$elem.classList.contains('index') || $elem.classList.contains('nightmode')) {
@@ -118,7 +118,7 @@ var observer = new MutationObserver(function() {
 });
 
 // Start observing changes in attributes of $elem
-observer.observe($elem, { attributes: true });
+observer.observe($elem[0], { attributes: true });
 
 
 // ------------------ NIGHTMODE ------------------- //
