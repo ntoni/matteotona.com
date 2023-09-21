@@ -101,21 +101,21 @@ Barba.Dispatcher.on('newPageReady', function(e) {
 var $elem = $('body'); // Get the DOM element from the jQuery object
 
 $(document).ready(function() {
-  if ($('body').attr('class') === "" || $('body').hasClass('nightmode')) {
+  function handleBodyClassChange() {
+    if ($('body').attr('class') === "" || $('body').hasClass('nightmode')) {
     $('nav').addClass('visibleopacity');
   } else if (!$('body').hasClass('nightmode')) {
     $('nav').removeClass('visibleopacity');
   }
+  }
+
+  // Listen for changes to the body class
+  $('body').on('DOMSubtreeModified', handleBodyClassChange);
+
+  // Initially trigger the logic
+  handleBodyClassChange();
 });
 
-// Event listener for body class changes
-$elem.on('DOMAttrModified', function() {
-if ($('body').attr('class') === "" || $('body').hasClass('nightmode')) {
-    $('nav').addClass('visibleopacity');
-  } else if (!$('body').hasClass('nightmode')) {
-    $('nav').removeClass('visibleopacity');
-  }
-});
 
 // ------------------ NIGHTMODE ------------------- //
 
