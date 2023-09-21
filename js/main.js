@@ -103,10 +103,11 @@ var $elem = $('body'); // Get the DOM element from the jQuery object
 $(document).ready(function() {
   if ($('body').attr('class') === "" || $('body').hasClass('nightmode')) {
     $('nav').addClass('visibleopacity');
-  } else {
+  } else if (!$('body').hasClass('nightmode')) {
     $('nav').removeClass('visibleopacity');
   }
 });
+
 
 
 
