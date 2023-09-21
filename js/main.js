@@ -103,10 +103,12 @@ var $elem = $('body'); // Get the DOM element from the jQuery object
 
 $(document).ready(function() {
   function handleBodyClassChange() {
-    var bodyClass = $('body').attr('class');
-    var isNightMode = /\bnightmode\b/.test(bodyClass);
-    var hasNonIndexClass = /\b(?!index\b)\w+\b/.test(bodyClass);
-    $('nav').toggleClass('visibleopacity', !isNightMode || (isNightMode && !hasNonIndexClass));
+    var bodyClasses = $('body').attr('class').split(' ');
+    var hasEmptyClass = bodyClasses.length === 0;
+    var hasOnlyIndexClass = bodyClasses.length === 1 && bodyClasses[0] === 'index';
+    var hasOnlyNightmodeClass = bodyClasses.length === 1 && bodyClasses[0] === 'nightmode';
+    
+    $('nav').toggleClass('visibleopacity', hasEmptyClass || hasOnlyIndexClass || hasOnlyNightmodeClass);
   }
 
   // Listen for changes to the body class
@@ -115,6 +117,7 @@ $(document).ready(function() {
   // Initially trigger the logic
   handleBodyClassChange();
 });
+
 
 
 
