@@ -795,7 +795,7 @@ a#more{
   and
   (-moz-text-fill-color: white)) {
   a#more:hover {
-    color: #ff5472
+    color: #ff5472;
        -moz-text-fill-color: white;
     -webkit-text-fill-color: white;
        -moz-text-stroke-color: #666;
@@ -804,7 +804,7 @@ a#more{
     -webkit-text-stroke-width: 1px;
   }
   .nightmode a#more:hover {
-    color: #ff5472
+    color: #ff5472;
        -moz-text-fill-color: #0a1118;
     -webkit-text-fill-color: #0a1118;
        -moz-text-stroke-color: #a9a9a9;
@@ -1167,7 +1167,7 @@ section.worknav a{
   white-space: normal;
   /* filter: alpha(opacity=0);
   opacity: 0; */
-  line-break: auto
+  line-break: auto;
   right: 36px;
   width: 130px;
   text-align: center;
