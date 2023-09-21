@@ -108,9 +108,14 @@ $(document).ready(function() {
   }
 });
 
-
-
-
+// Event listener for body class changes
+$elem.on('DOMAttrModified', function() {
+if ($('body').attr('class') === "" || $('body').hasClass('nightmode')) {
+    $('nav').addClass('visibleopacity');
+  } else if (!$('body').hasClass('nightmode')) {
+    $('nav').removeClass('visibleopacity');
+  }
+});
 
 // ------------------ NIGHTMODE ------------------- //
 
