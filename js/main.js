@@ -101,28 +101,26 @@ Barba.Dispatcher.on('newPageReady', function(e) {
 var $elem = $('body');
 
 $(document).ready(function() {
-  if (!$elem.hasClass('index')) {
-	  console.log('Inside DOMattr');
-    $('nav').addClass('visibleopacity');
-  } else if ($elem.attr('class') === 'nightmode') {
+  if (!$elem.hasClass('index') || $elem.hasClass('nightmode')) {
     $('nav').addClass('visibleopacity');
   } else {
     $('nav').removeClass('visibleopacity');
   }
 });
 
-
-// Event listener for body class changes
-$elem.on('DOMAttrModified', function() {
-	
-  if (!$elem.hasClass('index')) {
-    $('nav').addClass('visibleopacity');
-  } else if ($elem.attr('class') === 'nightmode') {
+// Create a new MutationObserver instance
+var observer = new MutationObserver(function() {
+  if (!$elem.hasClass('index') || $elem.hasClass('nightmode')) {
     $('nav').addClass('visibleopacity');
   } else {
     $('nav').removeClass('visibleopacity');
   }
 });
+
+// Start observing changes in attributes of $elem
+observer.observe($elem[0], { attributes: true });
+
+
 
 
 // ------------------ NIGHTMODE ------------------- //
