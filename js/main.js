@@ -102,11 +102,11 @@ var $elem = $('body');
 
 $(document).ready(function() {
   if (!$elem.hasClass('index')) {
-    $('.sub-menu').addClass('visibleopacity');
+    $('nav').addClass('visibleopacity');
   } else if ($elem.attr('class') === 'nightmode') {
-    $('.sub-menu').addClass('visibleopacity');
+    $('nav').addClass('visibleopacity');
   } else {
-    $('.sub-menu').removeClass('visibleopacity');
+    $('nav').removeClass('visibleopacity');
   }
 });
 
@@ -115,11 +115,11 @@ $(document).ready(function() {
 $elem.on('DOMAttrModified', function() {
 	console.log('Inside DOMattr');
   if (!$elem.hasClass('index')) {
-    $('.sub-menu').addClass('visibleopacity');
+    $('nav').addClass('visibleopacity');
   } else if ($elem.attr('class') === 'nightmode') {
-    $('.sub-menu').addClass('visibleopacity');
+    $('nav').addClass('visibleopacity');
   } else {
-    $('.sub-menu').removeClass('visibleopacity');
+    $('nav').removeClass('visibleopacity');
   }
 });
 
