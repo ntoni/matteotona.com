@@ -102,11 +102,9 @@ var $elem = $('body'); // Get the DOM element from the jQuery object
 
 $(document).ready(function() {
   function handleBodyClassChange() {
-    if ($('body').attr('class') === "" || $('body').hasClass('nightmode')) {
-    $('nav').addClass('visibleopacity');
-  } else if (!$('body').hasClass('nightmode')) {
-    $('nav').removeClass('visibleopacity');
-  }
+    var bodyClass = $('body').attr('class');
+    var isNightMode = /\bnightmode\b/.test(bodyClass);
+    $('nav').toggleClass('visibleopacity', bodyClass === "" || isNightMode);
   }
 
   // Listen for changes to the body class
@@ -115,6 +113,7 @@ $(document).ready(function() {
   // Initially trigger the logic
   handleBodyClassChange();
 });
+
 
 
 // ------------------ NIGHTMODE ------------------- //
