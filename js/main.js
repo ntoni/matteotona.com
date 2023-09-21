@@ -118,7 +118,7 @@ var observer = new MutationObserver(function() {
 });
 
 // Start observing changes in attributes of $elem
-.observe($elem, { attributes: true });
+observer.observe($, { attributes: true });
 
 
 // ------------------ NIGHTMODE ------------------- //
