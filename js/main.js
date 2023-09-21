@@ -104,7 +104,7 @@ var $elem = $('body'); // Get the DOM element from the jQuery object
 $(document).ready(function() {
   function handleBodyClassChange() {
     var bodyClasses = $('body').attr('class').split(' ');
-    var hasEmptyClass = bodyClasses.length === 0;
+    var hasEmptyClass = bodyClass === "";
     var hasOnlyIndexClass = bodyClasses.length === 1 && bodyClasses[0] === 'index';
     var hasOnlyNightmodeClass = bodyClasses.length === 1 && bodyClasses[0] === 'nightmode';
     
