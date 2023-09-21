@@ -102,6 +102,7 @@ var $elem = $('body');
 
 $(document).ready(function() {
   if (!$elem.hasClass('index')) {
+	  console.log('Inside DOMattr');
     $('nav').addClass('visibleopacity');
   } else if ($elem.attr('class') === 'nightmode') {
     $('nav').addClass('visibleopacity');
@@ -113,7 +114,7 @@ $(document).ready(function() {
 
 // Event listener for body class changes
 $elem.on('DOMAttrModified', function() {
-	console.log('Inside DOMattr');
+	
   if (!$elem.hasClass('index')) {
     $('nav').addClass('visibleopacity');
   } else if ($elem.attr('class') === 'nightmode') {
