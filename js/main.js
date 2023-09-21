@@ -98,10 +98,10 @@ Barba.Dispatcher.on('newPageReady', function(e) {
 
 // ------------------ MENU CHECK ------------------//
 
-var $elem = $('body');
+var $elem = $('body')[0]; // Get the DOM element from the jQuery object
 
 $(document).ready(function() {
-  if (!$elem.hasClass('index') || $elem.hasClass('nightmode')) {
+  if (!$elem.classList.contains('index') || $elem.classList.contains('nightmode')) {
     $('nav').addClass('visibleopacity');
   } else {
     $('nav').removeClass('visibleopacity');
@@ -110,7 +110,7 @@ $(document).ready(function() {
 
 // Create a new MutationObserver instance
 var observer = new MutationObserver(function() {
-  if (!$elem.hasClass('index') || $elem.hasClass('nightmode')) {
+  if (!$elem.classList.contains('index') || $elem.classList.contains('nightmode')) {
     $('nav').addClass('visibleopacity');
   } else {
     $('nav').removeClass('visibleopacity');
@@ -118,9 +118,7 @@ var observer = new MutationObserver(function() {
 });
 
 // Start observing changes in attributes of $elem
-observer.observe($elem[0], { attributes: true });
-
-
+.observe($elem, { attributes: true });
 
 
 // ------------------ NIGHTMODE ------------------- //
