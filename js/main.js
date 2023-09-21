@@ -101,24 +101,13 @@ Barba.Dispatcher.on('newPageReady', function(e) {
 var $elem = $('body'); // Get the DOM element from the jQuery object
 
 $(document).ready(function() {
-  if (!$elem.classList.contains('index') || $elem.classList.contains('nightmode')) {
+    if ($('body[class=""]').length === 1) {
     $('nav').addClass('visibleopacity');
   } else {
     $('nav').removeClass('visibleopacity');
   }
 });
 
-// Create a new MutationObserver instance
-var observer = new MutationObserver(function() {
-  if (!$elem.classList.contains('index') || $elem.classList.contains('nightmode')) {
-    $('nav').addClass('visibleopacity');
-  } else {
-    $('nav').removeClass('visibleopacity');
-  }
-});
-
-// Start observing changes in attributes of $elem
-observer.observe($elem[0], { attributes: true });
 
 
 // ------------------ NIGHTMODE ------------------- //
