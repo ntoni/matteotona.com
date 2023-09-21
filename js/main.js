@@ -101,12 +101,13 @@ Barba.Dispatcher.on('newPageReady', function(e) {
 var $elem = $('body'); // Get the DOM element from the jQuery object
 
 $(document).ready(function() {
-    if ($('body[class=""]').length === 1) {
+  if ($('body').attr('class') === undefined) {
     $('nav').addClass('visibleopacity');
   } else {
     $('nav').removeClass('visibleopacity');
   }
 });
+
 
 
 
