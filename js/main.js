@@ -108,9 +108,9 @@ $(document).ready(function() {
     var hasOnlyNightmodeClass = bodyClass === "nightmode";
 
     if (hasEmptyClass || hasOnlyNightmodeClass) {
-      $('nav').addClass('visibleopacity').stop().animate({ opacity: 1 }, 5000);
+      $('.sub-menu').addClass('visibleopacity').stop().animate({ opacity: 1 }, 5000);
     } else {
-      $('nav').removeClass('visibleopacity').stop().animate({ opacity: 0 }, 5000);
+      $('.sub-menu').removeClass('visibleopacity').stop().animate({ opacity: 0 }, 5000);
     }
   });
   
