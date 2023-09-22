@@ -107,11 +107,7 @@ $(document).ready(function() {
     var hasEmptyClass = bodyClass === "";
     var hasOnlyNightmodeClass = bodyClass === "nightmode";
 
-    if (hasEmptyClass || hasOnlyNightmodeClass) {
-      $('.sub-menu').addClass('visibleopacity').stop().animate({ opacity: 1 }, 5000);
-    } else {
-      $('.sub-menu').removeClass('visibleopacity').stop().animate({ opacity: 0 }, 5000);
-    }
+    $('nav').toggleClass('visibleopacity', hasEmptyClass || hasOnlyNightmodeClass);
   });
   
   $('body').trigger('DOMSubtreeModified');
