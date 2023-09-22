@@ -114,9 +114,6 @@ $(document).ready(function() {
 });
 
 
-
-
-
 // ------------------ NIGHTMODE ------------------- //
 
 $(document).on('click', '#nightmode', function() {
