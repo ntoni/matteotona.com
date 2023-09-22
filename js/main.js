@@ -107,7 +107,11 @@ $(document).ready(function() {
     var hasEmptyClass = bodyClass === "";
     var hasOnlyNightmodeClass = bodyClass === "nightmode";
 
-    $('nav').toggleClass('visibleopacity', hasEmptyClass || hasOnlyNightmodeClass);
+    if (hasEmptyClass || hasOnlyNightmodeClass) {
+      $('nav').addClass('visibleopacity').stop().animate({ opacity: 1 }, 5000);
+    } else {
+      $('nav').removeClass('visibleopacity').stop().animate({ opacity: 0 }, 5000);
+    }
   });
   
   $('body').trigger('DOMSubtreeModified');
