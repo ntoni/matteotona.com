@@ -102,20 +102,15 @@ var $elem = $('body'); // Get the DOM element from the jQuery object
 
 
 $(document).ready(function() {
-  function handleBodyClassChange() {
-    var bodyClasses = $('body').attr('class').split(' ');
+  $('body').on('DOMSubtreeModified', function() {
+    var bodyClass = $('body').attr('class');
     var hasEmptyClass = bodyClass === "";
-    var hasOnlyIndexClass = bodyClasses.length === 1 && bodyClasses[0] === 'index';
-    var hasOnlyNightmodeClass = bodyClasses.length === 1 && bodyClasses[0] === 'nightmode';
-    
-    $('nav').toggleClass('visibleopacity', hasEmptyClass || hasOnlyIndexClass || hasOnlyNightmodeClass);
-  }
+    var hasOnlyNightmodeClass = bodyClass === "nightmode";
 
-  // Listen for changes to the body class
-  $('body').on('DOMSubtreeModified', handleBodyClassChange);
-
-  // Initially trigger the logic
-  handleBodyClassChange();
+    $('nav').toggleClass('visibleopacity', hasEmptyClass || hasOnlyNightmodeClass);
+  });
+  
+  $('body').trigger('DOMSubtreeModified');
 });
 
 
