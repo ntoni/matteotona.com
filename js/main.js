@@ -119,12 +119,12 @@ $(document).ready(function() {
 $(document).on('click', '#nightmode', function() {
   if ($('body').hasClass("nightmode")) {
     $('body').removeClass("nightmode");
-    $('#nightmode i').removeClass("fas");
-    $('#nightmode i').addClass("fab");
+    $('#nightmode i').removeClass("ph-fill");
+    $('#nightmode i').addClass("ph");
   } else {
     $('body').addClass("nightmode");
-    $('#nightmode i').removeClass("fab");
-    $('#nightmode i').addClass("fas");
+    $('#nightmode i').removeClass("ph");
+    $('#nightmode i').addClass("ph-fill");
   }
 });
 
@@ -170,15 +170,15 @@ $(window).on('load', function() {
   var hour = now.getHours();
 	if (hour >= 7 && hour < 20){
 		$('body').removeClass("nightmode");
-    $('#nightmode i').removeClass("fas");
-    $('#nightmode i').addClass("fab");
+    $('#nightmode i').removeClass("ph-fill");
+    $('#nightmode i').addClass("ph");
     $('.nightip').hide();
     // console.log("giorno");
   }else {
     // console.log("notte")
   	$('body').addClass("nightmode");
-    $('#nightmode i').removeClass("fab");
-    $('#nightmode i').addClass("fas");
+    $('#nightmode i').removeClass("ph");
+    $('#nightmode i').addClass("ph-fill");
     $('.nightip').show();
     $('.nightip,#nightmode').mouseover(function() {
       $('.nightip').fadeOut(500, "linear");

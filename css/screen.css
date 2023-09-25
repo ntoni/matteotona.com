@@ -1,145 +1,8 @@
 @font-face {
-    font-family: 'Metropolis';
-    src: url('../font/Metropolis-ThinItalic.woff2') format('woff2'),
-        url('../font/Metropolis-ThinItalic.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Metropolis Extra';
-    src: url('../font/Metropolis-ExtraLight.woff2') format('woff2'),
-        url('../font/Metropolis-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Metropolis';
-    src: url('../font/Metropolis-Medium.woff2') format('woff2'),
-        url('../font/Metropolis-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Metropolis';
-    src: url('../font/Metropolis-Regular.woff2') format('woff2'),
-        url('../font/Metropolis-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Metropolis';
-    src: url('../font/Metropolis-BoldItalic.woff2') format('woff2'),
-        url('../font/Metropolis-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Metropolis';
-    src: url('../font/Metropolis-Black.woff2') format('woff2'),
-        url('../font/Metropolis-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Metropolis Extra';
-    src: url('../font/Metropolis-ExtraBoldItalic.woff2') format('woff2'),
-        url('../font/Metropolis-ExtraBoldItalic.woff') format('woff');
-    font-weight: 800;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Metropolis Semi';
-    src: url('../font/Metropolis-SemiBoldItalic.woff2') format('woff2'),
-        url('../font/Metropolis-SemiBoldItalic.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Metropolis';
-    src: url('../font/Metropolis-Light.woff2') format('woff2'),
-        url('../font/Metropolis-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Metropolis';
-    src: url('../font/Metropolis-Bold.woff2') format('woff2'),
-        url('../font/Metropolis-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Metropolis';
-    src: url('../font/Metropolis-BlackItalic.woff2') format('woff2'),
-        url('../font/Metropolis-BlackItalic.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Metropolis';
-    src: url('../font/Metropolis-RegularItalic.woff2') format('woff2'),
-        url('../font/Metropolis-RegularItalic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Metropolis Extra';
-    src: url('../font/Metropolis-ExtraLightItalic.woff2') format('woff2'),
-        url('../font/Metropolis-ExtraLightItalic.woff') format('woff');
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Metropolis';
-    src: url('../font/Metropolis-LightItalic.woff2') format('woff2'),
-        url('../font/Metropolis-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Metropolis';
-    src: url('../font/Metropolis-MediumItalic.woff2') format('woff2'),
-        url('../font/Metropolis-MediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Metropolis';
-    src: url('../font/Metropolis-Thin.woff2') format('woff2'),
-        url('../font/Metropolis-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Metropolis Extra';
-    src: url('../font/Metropolis-ExtraBold.woff2') format('woff2'),
-        url('../font/Metropolis-ExtraBold.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Metropolis Semi';
-    src: url('../font/Metropolis-SemiBold.woff2') format('woff2'),
-        url('../font/Metropolis-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
+  font-family: "lexend";
+  src: url("../font/Lexend-VariableFont_wght.ttf") format("truetype supports variations"),
+       url("../font/Lexend-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 100 1000;
 }
 
 
@@ -164,8 +27,8 @@
 }
 html{
     font-size:16px;
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
-    color:rgba(45,55,65,.85);
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
+    color:#000000;
     letter-spacing: -0.3px;
 }
 @media(min-width:700px){
@@ -187,11 +50,15 @@ body{
     margin:0;
     padding:0;
     line-height:1.5;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
 }
 div.container{
     /* max-width:1500px; */
-    margin:0 auto;
+    display: flex;
+    padding: 24px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 /* div.container:before{
     background-image: url('https://www.matteotona.com/images/bkg.png');
@@ -205,7 +72,7 @@ div.container{
     height: 100%;
 } */
 main{
-    padding:0 2rem
+    padding:0;
 }
 a{
     text-decoration:none;
@@ -221,6 +88,20 @@ a:hover{
 }
 a:active{
     color:#46505b
+}
+a.button{
+    border-radius: 16px;
+    background: var(--ntoni-black, #1A212B)!important;
+    display: flex;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+    height: 48px;
+    color: #fff!important;
+    font-weight: 500;
+    font-size: 18px!important;
 }
 h1,h2{
     font-size:1.2rem;
@@ -238,7 +119,7 @@ article h3{
     color:rgba(45,55,65,.85)
 }
 p,main ul{
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
     font-size:1rem;
     line-height: 1.8rem;
 }
@@ -246,14 +127,15 @@ h2~p{
     margin-top:.25rem
 }
 small{
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
     font-size:.85rem;
     color:rgba(45,55,65,.5)
 }
-ul.naked{
-    margin:0;
-    padding:0;
-    list-style:none
+div.naked{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
 }
 
 figure{
@@ -266,7 +148,7 @@ figure img{
 }
 figcaption{
     text-align:center;
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
     font-size:.85rem;
     color:rgba(45,55,65,.5)
 }
@@ -294,7 +176,7 @@ hr{
     max-width:15em
 }
 a.action{
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
     font-size:.85rem;
     text-transform:uppercase;
     letter-spacing:.02em
@@ -324,52 +206,54 @@ a.action:after{
 }
 nav,footer{
     font-size:1rem;
-    padding:2rem;
-    padding-bottom:2.2rem
+    padding-bottom:1rem;
+    display:flex;
 }
 footer{
-    font-size:.85rem
+    font-size:.85rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
 }
-nav li{
-    display:inline-block;
-    margin-right:.75em;
-    float: left;
+/* nav div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+} */
+nav .social{
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
 }
-nav li.side-link{
-  position:inherit;
-  right:1rem;
-  margin-right: 0;
+nav .social a{
+  line-height: 0!important;
 }
-nav li.side-link a{
-  margin-left: 12px;
-  font-weight: 100
-}
-nav li.logo{
+nav .logo{
   /* margin-right:2rem; */
 }
-#nav li.logo img{
-  width: 5rem;
+#nav .logo img{
+  width: 100px;
 }
 nav,footer{
     position:relative
 }
-nav ul li.logo{
-    position:inherit;
-    right:2rem
+nav .logo{
+  width: 100px;
+  height: 33.176px;
+  flex-shrink: 0;
 }
-footer a.top{
-    position:absolute;
-    right:2rem;
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
-    background:0 0;
+footer .ph{
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
+    color:#000;
     font-size:1.4rem;
-    margin-left:2rem;
     line-height:1.2
 }
 nav a,section.worknav a{
     font-size:1.2rem;
-    line-height:2;
-    color: #b1bac3;
+    line-height:0;
+    color: #000;
     background-image:linear-gradient(to bottom,transparent 50%,transparent 50%)
 }
 nav a.active,section.worknav a.active{
@@ -386,22 +270,31 @@ nav a svg g{
 nav a svg{
     margin-bottom:.35em
 }
-nav .fa-moon{
-    font-size: 0.9em;
+/* nav .ph-moon-stars{
+    font-size: inherit;
+} */
+nav#nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.ph, .ph-fill{
+  font-size: 2rem;
 }
 
 @media(max-width:600px){
-  h1.intro{
+  /* h1.intro{
     font-size:1rem!important;
     padding-top: 0!important;
   }
   h1.intro.project{
     padding-top: 0!important;
   }
-  .sub-menu li{
+  .sub-menu div{
     font-size: 1.6rem;
     padding-right: 5px!important;
-  }
+  } */
   .roll{
     height: 1.5rem!important;
     line-height: 1rem!important;
@@ -409,18 +302,18 @@ nav .fa-moon{
     margin-bottom: -6.5px!important;
     padding: 0 1px!important;
   }
-    nav ul li.logo{
+    /* nav .logo{
         position:static
-    }
-    nav li{
+    } */
+   /*  nav div{
         line-height:1;
         float: none;
-    }
-    nav li:first-child{
+    } */
+   /*  nav div:first-child{
         width:100%;
         margin-bottom:.5rem
     }
-    nav ul.naked .item-text ul{
+    nav div.naked .item-text ul{
       display: flex;
       padding: 0;
     }
@@ -428,15 +321,15 @@ nav .fa-moon{
       font-size: 1.2rem!important;
       font-weight: 400;
     }
-    nav li.side-link a {
+    nav .social a {
       font-size: 1.2rem;
     }
     nav{
       padding-bottom: 0rem;
-    }
-    nav .fa-moon{
+    } */
+   /*  nav .ph-moon-stars{
         font-size: 0.9em;
-    }
+    } */
     .gallery{
       width: 65vh!important;
       margin-top: -9rem!important;
@@ -470,18 +363,18 @@ nav .fa-moon{
     }
 }
 @media(min-width:1000px){
-    nav,main,footer{
+/*     nav,main,footer{
         padding-left:4rem;
         padding-right:4rem
-    }
-    nav li{
+    } */
+    /* nav li{
         margin-right:2rem
-    }
-    nav ul li.logo,footer a.top{
+    } */
+    /* nav ul li.logo,footer a.top{
         right:4rem
-    }
+    } */
     p,main ul{
-        font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+        font-family: 'lexend', Helvetica,Arial,sans-serif;
         font-size:1.2rem;
         line-height: 2rem;
     }
@@ -528,7 +421,7 @@ a.projectlink{
 }
 a.projectlink img{
     margin-bottom:1rem;
-    border-radius: 5px;
+    border-radius: 16px;
     -webkit-tap-highlight-color: transparent;
 }
 a.projectlink:hover img{
@@ -564,7 +457,7 @@ a.projectlink div{
 }
 a.projectlink span.desc{
     font-size:109%;
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
     color:rgba(45,55,65,.5);
     font-style:italic
 }
@@ -618,7 +511,7 @@ body.personal .intro-container,
       transform: scale3d(0.90, 0.90, 0.90);
     }
     a.projectlink img{
-        border-radius: 8px;
+        border-radius: 16px;
       }
       .intro-box h1{
         float: none;
@@ -667,11 +560,8 @@ div.maintain img{
 @media(min-width:350px){
     .related{
         display:grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr;
         grid-gap:2rem
-    }
-    .related div:first-child{
-        grid-column:1/3
     }
     .related h2{
         margin-bottom:0
@@ -698,7 +588,7 @@ div.maintain img{
 @media(min-width:200px){
     .related.clients{
         display:none;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr;
         grid-gap:2rem;
         grid-gap: 0.5rem 2rem;
         transition: all .5s;
@@ -710,18 +600,16 @@ div.maintain img{
       padding-bottom: 25px;
     }
 }
-@media(min-width:800px){
-    .related.four-col div:first-child{
-        grid-column:1/5
-    }
+@media(min-width:744px){
     .related.five-col{
         grid-template-columns:1fr 1fr 1fr 1fr 1fr;
         max-width: calc(95% + 2rem);
     }
     .related{
-        padding-left:3.2rem;
+        grid-template-columns: 1fr 1fr;
+        /* padding-left:3.2rem; */
         position:relative;
-        margin:2rem 0
+        margin:1rem 0
     }
     .related>div.title{
         position:absolute;
@@ -780,6 +668,7 @@ div.maintain img{
 }
 a#more{
   margin: 0;
+  display: contents;
   animation-duration: .3s;
   padding-top: 0;
   font-weight:500;
@@ -816,6 +705,7 @@ a#more{
 @media(min-width:1200px){
     .related{
         grid-gap:3rem;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     a#more{
     }
@@ -898,24 +788,6 @@ span.title.project{
   font-size: 1.3rem;
   font-weight: 400;
 }
-body.projects-brands .brands a, a.brands, .sub-menu ul.menu li.brands a.active, .sub-menu ul.menu li.brands a:hover, .nightmode .sub-menu ul.menu li.brands a.active, .nightmode .sub-menu ul.menu li.brands a:hover{
-    color: #ff5270!important;
-}
-body.projects-websites .websites a, a.websites, .sub-menu ul.menu li.websites a.active, .sub-menu ul.menu li.websites a:hover, .nightmode .sub-menu ul.menu li.websites a.active, .nightmode .sub-menu ul.menu li.websites a:hover{
-    color: #00cd98!important;
-}
-body.projects-ads .ads a, a.ads, .sub-menu ul.menu li.ads a.active, .sub-menu ul.menu li.ads a:hover, .nightmode .sub-menu ul.menu li.ads a.active, .nightmode .sub-menu ul.menu li.ads a:hover{
-    color: #16C0D5!important;
-}
-body.projects-apps .apps a, a.apps, .sub-menu ul.menu li.apps a.active, .sub-menu ul.menu li.apps a:hover, .nightmode .sub-menu ul.menu li.apps a.active, .nightmode .sub-menu ul.menu li.apps a:hover{
-    color: #FF9B22!important;
-}
-body.projects-video .video a, a.video, .sub-menu ul.menu li.video a.active, .sub-menu ul.menu li.video a:hover, .nightmode .sub-menu ul.menu li.video a.active, .nightmode .sub-menu ul.menu li.video a:hover{
-    color: #b300f4!important;
-}
-body.projects-print .print a, a.print, .sub-menu ul.menu li.print a.active, .sub-menu ul.menu li.print a:hover, .nightmode .sub-menu ul.menu li.print a.active, .nightmode .sub-menu ul.menu li.print a:hover{
-    color: #7cd300!important;
-}
 section.workgrid.project{
     padding-bottom: 3rem;
 }
@@ -933,31 +805,62 @@ section.workgrid.project{
 .sub-menu{
     opacity: 0;
     visibility: hidden;
-    margin-top: 0;
-    width: 100%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
     transition: all 0.5s;
+    padding-bottom: 0px;
 }
 .sub-menu.first{
   padding-top: 0px;
 }
 .sub-menu ul.menu{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
     font-size: 2rem;
-    padding-top: 4vh;
     margin-bottom: 0;
     list-style: none;
     font-weight: 300;
     margin-block-start: 0;
     padding: 0;
-    margin-top: 7px;
+    text-align: center;
 }
 .sub-menu ul.menu li{
-    float: left;
-    padding-right: 12px;
-    margin-right: 0
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+.sub-menu ul.menu .introd{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 530px;
+  line-height: 40px; 
+}
+.tabs{
+  display: flex;
+  align-items: flex-start;
+}
+.tabs li.active{
+  border-bottom: 2px solid #000;
+}
+.tabs li a{
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  transition: all 0.05s;
+  font-weight: 500;
 }
 .sub-menu ul.menu li.apps{
    clear: both;
@@ -965,12 +868,8 @@ section.workgrid.project{
 .sub-menu ul.menu li a.active{
     color: rgba(45,55,65,.85);
 }
-.sub-menu ul.menu li a{
-    color: inherit;
-    background: none;
+.sub-menu .introd a{
     font-size: 2rem;
-    line-height: 1;
-    transition: all 0.05s;
 }
 .sub-menu ul.menu li.disable{
     color:#c1c1c1;
@@ -1013,7 +912,7 @@ section.newsletter input{
     margin:1rem auto
 }
 section.newsletter input[type=email]{
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
     font-size:16px;
     background:#fff;
     border:1px solid rgba(45,55,65,.1);
@@ -1027,24 +926,24 @@ section.newsletter input[type=submit]{
     background-color:#2d3741;
     color:#fff;
     border:none;
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
     font-size:16px;
     padding:.5rem .75rem;
     cursor:pointer
 }
-@media(min-width:1100px){
+/* @media(min-width:1100px){
     section.designprojects{
         max-width:75%
     }
-}
-@media(min-width:1200px){
+} */
+/* @media(min-width:1200px){
     section.designprojects{
-        max-width:calc(75% + 2rem)
+        max-width:calc(75% + 1rem)
     }
     section.designprojects.first{
-        max-width: calc(95% + 2rem);
+        max-width: calc(95% + 1rem);
     }
-}
+} */
 .workgrid>div{
     margin-bottom:2rem
 }
@@ -1226,22 +1125,23 @@ section.worknav a{
     .workgrid{
         grid-gap:4rem
     }
-    ul.naked .item-text{
+    div.naked .item-text{
       width: 75%;
       text-align: center;
       margin-right: 0;
     }
-    ul.naked .item-text ul{
+    div.naked .item-text ul{
       display: inline-block;
       padding: 0;
     }
-    ul.naked .logo{
-      width: 10%;
-      margin-right: 0;
+    div.naked .logo{
+      width: 100px;
+      height: 33.176px;
+      flex-shrink: 0;
     }
-    ul.naked .side-link{
+   /*  ul.naked .social{
       width: 15%;
-    }
+    } */
     body.index .sub-menu, body.projects-brands .sub-menu, body.projects-websites .sub-menu, body.projects-apps .sub-menu, body.projects-print .sub-menu, body.projects-ads .sub-menu, body.projects-video .sub-menu{
       padding-top: 20px!important;
     }
@@ -1264,8 +1164,8 @@ section.worknav a{
       display: inline-block;
     }
     nav#nav a{
-        font-size: 1.4rem!important;
-        line-height: 1.7!important;
+        /* font-size: 2em!important; */
+        /* line-height: 1.7!important; */
     }
     nav#nav a.active{
         font-weight: 600;
@@ -1305,7 +1205,7 @@ section.imagery figure{
     }
 }
 .class{
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
     font-size:1.1rem;
     color:rgba(45,55,65,.5);
     padding-top: 9px;
@@ -1431,6 +1331,10 @@ img.about{
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#barba-wrapper{
+  width: 100%;
+}
 .barba-container section.about ul{
   list-style: none;
   padding-inline-start: 0;
@@ -1538,9 +1442,9 @@ section.about{
       font-size: 0.9rem;
       margin-top: 1.1rem;
     }
-    section.related {
+    /* section.related {
       padding-left: 0rem;
-    }
+    } */
     section.related div.title{
       /* display: none; */
     }
@@ -1677,12 +1581,12 @@ section.about{
   .gallery p.info {
     left: -529px!important;
   }
-  ul.naked .item-text {
+  div.naked .item-text {
     width: 79%;
   }
-  ul.naked .side-link {
+  /* ul.naked .social {
     width: 11%;
-  }
+  } */
 }
 .illogrid img{
     display:block;
@@ -1718,6 +1622,9 @@ ul.talk small{
     padding:2rem
 }
 @media(max-width:600px){
+    .container{
+      padding: 24px 24px!important;
+    }
     .aboutgrid{
         margin-left:-2rem;
         margin-right:-2rem
@@ -1728,8 +1635,8 @@ ul.talk small{
     .sub-menu {
       margin-top: 0px!important;
     }
-    .sub-menu ul.menu{
-
+    .sub-menu ul.menu, .sub-menu .introd a {
+      font-size: 1.8rem;
     }
     ul.menu li.mobile{
       display: inline-block;
@@ -1744,15 +1651,15 @@ ul.talk small{
       margin-bottom: 0!important;
       width: auto!important
     }
-    .sub-menu ul.menu li{
+    /* .sub-menu ul.menu li{
       margin-right: 7px;
       padding-bottom: 5px;
-    }
+    } */
     .sub-menu ul.menu li.apps{
       clear: none;
     }
     .sub-menu ul.menu li a{
-      font-size: 1.6rem!important;
+      /* font-size: 1.6rem!important; */
       font-weight: 300
     }
     section.about {
@@ -1784,9 +1691,10 @@ ul.talk small{
       border-bottom-color: #171d1f
     }
     .sub-menu ul.menu div{
-      padding-top: 15px;
-      display: block;
-      clear: left;
+      /* padding-top: 15px; */
+      /* display: block;
+      clear: left; */
+      line-height: 120%;
     }
     .index .sub-menu, .projects-brands .sub-menu, .projects-websites .sub-menu, .projects-apps .sub-menu, .projects-ads .sub-menu, .projects-print .sub-menu, .projects-video .sub-menu{
       padding-bottom: 0
@@ -1868,11 +1776,8 @@ ul.talk small{
         max-width:57em;
         margin:0 auto
     }
-    ul.naked .item-text {
+    div.naked .item-text {
       width: 79%;
-    }
-    ul.naked .side-link {
-      width: 11%;
     }
     .gallery{
           margin-top: -130px;
@@ -2219,7 +2124,7 @@ div.postnav div:last-child{
     border-left:1px solid #fff
 }
 div.postnav h3{
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
     text-transform:uppercase;
     margin:0;
     font-size:.85rem;
@@ -2351,7 +2256,7 @@ div.postnav h3{
     padding:1rem 2rem;
     margin:3rem auto;
     max-width:30em;
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
     border-radius:4px
 }
 .custom code{
@@ -2381,12 +2286,12 @@ div.postnav h3{
     padding:1rem 2rem;
     margin-top:0;
     text-align:center;
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
 }
 .custom div.section.foreword p{
     font-size:85%;
     color:#fff;
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
 }
 .custom div.section.foreword a{
     color:#fff;
@@ -2429,7 +2334,7 @@ div.postnav h3{
     text-transform:uppercase;
     letter-spacing:.06em;
     font-weight:300;
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
 }
 .custom div.footer{
     background-color:#333;
@@ -2438,7 +2343,7 @@ div.postnav h3{
 }
 .custom div.footer p{
     color:#fff;
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
     font-size:85%
 }
 .custom div.footer a{
@@ -2540,7 +2445,7 @@ div.postnav h3{
 }
 .custom div.section.white>div.step:first-child:before{
     content:'\201c';
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
     font-size:7em;
     color:rgba(0,0,0,.1);
     display:block;
@@ -2550,7 +2455,7 @@ div.postnav h3{
 }
 .custom div.section.white>div.step:last-child:after{
     content:'\201d';
-    font-family: 'Metropolis', Helvetica,Arial,sans-serif;
+    font-family: 'lexend', Helvetica,Arial,sans-serif;
     font-size:7em;
     width:auto;
     margin:0;
@@ -2700,23 +2605,23 @@ div.postnav h3{
       margin-bottom:0rem
   }
 }
-@media(min-width:600px) and (max-width:800px){
-  ul.naked .logo {
+/* @media(min-width:600px) and (max-width:800px){
+  div.naked .logo {
     width: 13%;
   }
-  ul.naked .item-text {
+  div.naked .item-text {
     width: 67%;
   }
-  ul.naked .side-link {
+  div.naked .social {
     width: 20%;
   }
-}
+} */
 @media(max-width:600px){
-  li.side-link{
+  /* .social{
     position: absolute!important;
     top: 33px;
     right: 25px!important;
-  }
+  } */
   .sw{
     float: none;
     padding-top: 12px;
@@ -2752,7 +2657,7 @@ body{
   transition: background ease-in-out 0.4s;
 }
 .nightmode, .nightmode a{
-  color:#cccccc;
+  color:#ffffff;
 }
 .nightmode nav a{
   color:#414141;

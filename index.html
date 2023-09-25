@@ -14,7 +14,7 @@
 	<!-- styles -->
 	<link rel="stylesheet" href="css/screen.css" type="text/css">
 	<link rel="stylesheet" href="css/print.css" type="text/css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="https://unpkg.com/@phosphor-icons/web"></script>
 
 	<!-- js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -24,11 +24,8 @@
 	<script src="js/lazysizes.min.js" async=""></script>
 	<script>
 		$(document).ready(function(){
-	      		$.get('menu.html',function(response){
+	      	$.get('menu.html',function(response){
 	          		$('#nav').html(response);
-			});
-			$.get('intro.html',function(response){
-          			$('#intro').html(response);
 			});
 			$.get('menu-projects.html', function(response) {
 				$('#nav-sub').html(response);
@@ -104,49 +101,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 	<div class="container">
 		<nav role="navigation" id="nav"></nav>
-		<div class="intro-container" id="intro"></div>
 		<nav class="sub-menu" id="nav-sub"></nav>
 		<main id="barba-wrapper">
 			<div class="barba-container" id="site-content">
 				<h1 class="home">I'm an user experience lover, design apps, ads, brands and websites</h1>
-				<section class="related four-col designprojects first">
-					<div class="title">
-						<h2>Recent Projects</h2>
-					</div>
+				<section class="related designprojects first">
+					
 					<div>
-						<a href="dcg-social" class="projectlink">
-							<img src="https://www.matteotona.com/images/dcg-thumb.jpg" data-sizes="100vw" alt="Abstract" class="lazyload full">
+						<a href="dcg-social.html" class="projectlink">
+							<img src="https://www.matteotona.com/images/dcg-thumb.png" data-sizes="100vw" alt="Abstract" class="lazyload full">
 							<div>
 								<a class="ads descrz" href="projects-ads">Ads</a><span class="desc"> / Dcg</span>
 							</div>
 						</a>
 					</div>
 					<div>
-						<a href="stroll" class="projectlink">
-							<img src="https://www.matteotona.com/images/stroll-thumb.jpg" data-sizes="100vw" alt="Faculty" class="lazyload full">
+						<a href="stroll.html" class="projectlink">
+							<img src="https://www.matteotona.com/images/stroll-thumb.png" data-sizes="100vw" alt="Faculty" class="lazyload full">
 							<div>
 								<a class="brands descrz" href="projects-brands">Branding</a>, <a class="websites descrz" href="projects-websites">Website</a>, <a class="print descrz" href="projects-print">Print</a><span class="desc"> / Stroll</span>
 							</div>
 						</a>
 					</div>
 					<div>
-						<a href="odcec-event" class="projectlink">
-							<img src="https://www.matteotona.com/images/odcec-event.jpg" data-sizes="100vw" alt="Faculty" class="lazyload full">
+						<a href="odcec-event.html" class="projectlink">
+							<img src="https://www.matteotona.com/images/odcec-event.png" data-sizes="100vw" alt="Faculty" class="lazyload full">
 							<div>
 								<a class="brands descrz" href="projects-brands">Branding</a>, <a class="ads descrz" href="projects-ads">Ads</a><span class="desc"> / Odcec</span>
 							</div>
 						</a>
 					</div>
 					<div>
-						<a href="valtur-bleisure" class="projectlink">
-							<img src="https://www.matteotona.com/images/valtur.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
+						<a href="valtur-bleisure.html" class="projectlink">
+							<img src="https://www.matteotona.com/images/valtur.png"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
 							<div>
 								<a class="websites descrz" href="projects-websites">Website</a><span class="desc"> / Valtur</span>
 							</div>
 						</a>
 					</div>
 					<div>
-						<a href="iff-video" class="projectlink">
+						<a href="iff-video.html" class="projectlink">
 							<img src="https://www.matteotona.com/images/trailer.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
 							<div>
 								<a class="video descrz" href="projects-video">Video</a><span class="desc"> / Embassy of Italy in Kuala Lumpur</span>
@@ -154,7 +148,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</a>
 					</div>
 					<div>
-						<a href="rexton" class="projectlink">
+						<a href="rexton.html" class="projectlink">
 							<img src="https://www.matteotona.com/images/rexton-thumb.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
 							<div>
 								<a class="ads descrz" href="projects-ads">Ads</a><span class="desc"> / Rexton</span>
@@ -162,7 +156,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</a>
 					</div>
 					<div>
-						<a href="rosa-apt" class="projectlink">
+						<a href="rosa-apt.html" class="projectlink">
 							<img src="https://www.matteotona.com/images/rosa-thumb.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
 							<div>
 								<a class="print descrz" href="projects-print">Print</a><span class="desc"> / Rosa apt</span>
@@ -170,7 +164,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</a>
 					</div>
 					<div>
-						<a href="yumami" class="projectlink">
+						<a href="yumami.html" class="projectlink">
 							<img src="https://www.matteotona.com/images/yumami-thumb.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
 							<div>
 								<a class="websites descrz" href="projects-websites">Website</a><span class="desc"> / Yumami</span>
