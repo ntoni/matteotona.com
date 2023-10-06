@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Matteo Tona - Rosa Apt</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="UX & UI Designer">
+	<meta name="robots" content="all">
+	<meta name="author" content="Matteo Tona">
+	<link rel="canonical" href="https://www.matteotona.com/">
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed for Matteo Tona" href="/feed.xml" />
+
+	<!-- styles -->
+	<link rel="stylesheet" href="css/screen.css" type="text/css">
+	<link rel="stylesheet" href="css/print.css" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<!-- js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<script src="js/barba.min.js"></script>
+	<script src="js/main.js" charset="utf-8"></script>
+	<script src="js/lazysizes.min.js" async=""></script>
+	<script>
+		$(document).ready(function(){
+      $.get('menu.html',function(response){
+          $('#nav').html(response);
+      });
+			$.get('intro.html',function(response){
+          $('#intro').html(response);
+      });
+			$.get('menu-projects.html', function(response) {
+				$('#nav-sub').html(response);
+			});
+			$.get('clients.html', function(response) {
+				$('#clients').html(response);
+			});
+      $.get('footer.html',function(response){
+          $('#footer').html(response);
+      });
+		});
+	</script>
+	<script type='text/javascript'>
+		try {
+			function css_browser_selector(u) {
+				var ua = u.toLowerCase(),
+					is = function(t) {
+						return ua.indexOf(t) > -1
+					},
+					g = 'gecko',
+					w = 'webkit',
+					s = 'safari',
+					o = 'opera',
+					m = 'mobile',
+					h = document.documentElement,
+					b = [(!(/opera|webtv/i.test(ua)) && /msie\s(\d)/.test(ua)) ? ('ie ie' + RegExp.$1) : is('firefox/2') ? g + ' ff2' : is('firefox/3.5') ? g + ' ff3 ff3_5' : is('firefox/3.6') ? g + ' ff3 ff3_6' : is('firefox/3') ? g + ' ff3' : is('gecko/') ? g :
+						is('opera') ? o + (/version\/(\d+)/.test(ua) ? ' ' + o + RegExp.$1 : (/opera(\s|\/)(\d+)/.test(ua) ? ' ' + o + RegExp.$2 : '')) : is('konqueror') ? 'konqueror' : is('blackberry') ? m + ' blackberry' : is('android') ? m + ' android' : is(
+							'chrome') ? w + ' chrome' : is('iron') ? w + ' iron' : is('applewebkit/') ? w + ' ' + s + (/version\/(\d+)/.test(ua) ? ' ' + s + RegExp.$1 : '') : is('mozilla/') ? g : '', is('j2me') ? m + ' j2me' : is('iphone') ? m + ' iphone' : is('ipod') ?
+						m + ' ipod' : is('ipad') ? m + ' ipad' : is('mac') ? 'mac' : is('darwin') ? 'mac' : is('webtv') ? 'webtv' : is('win') ? 'win' + (is('windows nt 6.0') ? ' vista' : '') : is('freebsd') ? 'freebsd' : (is('x11') || is('linux')) ? 'linux' : '',
+						'js'
+					];
+				c = b.join(' ');
+				h.className += ' ' + c;
+				return c;
+			};
+			css_browser_selector(navigator.userAgent);
+		} catch (e) {}
+	</script>
+	<script>
+		window._4ORMAT = window._4ORMAT || {};
+	  window._4ORMAT.social = {
+	    instagram: {
+	      accessToken: null
+	    }
+	  }
+	</script>
+
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KR2CX2N');</script>
+<!-- End Google Tag Manager -->
+
+	<!-- fb -->
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Matteo Tona">
+	<meta property="og:description" content="UX & UI Designer">
+	<meta property="og:url" content="https://www.matteotona.com/">
+	<meta property="og:site_name" content="Matteo Tona">
+
+	<!-- tw -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@matteotona" />
+	<meta name="twitter:title" content="Matteo Tona" />
+	<meta name="twitter:description" content="UX & UI Designer" />
+	<meta name="twitter:url" content="https://www.matteotona.com/" />
+
+	<!-- apple -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon-180x180.png">
+
+	<!-- fav -->
+	<link rel="icon" type="image/png" href="/icons/favicon-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/icons/favicon-160x160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KR2CX2N"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<div class="container">
+		<nav role="navigation" class="prj" id="nav"></nav>
+		<div class="intro-container" id="intro"></div>
+		<nav class="sub-menu" id="nav-sub"></nav>
+		<main id="barba-wrapper">
+			<div class="barba-container" id="site-content">
+				<section class="grid two-col description">
+					<header>
+						<div class="title-intro">
+							<h2>Visual communication</h2>
+							<span class="subline">
+								<a class="brands descrz" href="projects-brands">Branding</a>, <a class="print descrz" href="projects-print">Print</a><span class="desc"> / Rosa Apartments</span>
+							</span>
+						</div>
+						<div class="sw">
+							<span class="illustrator"></span>
+							<span class="lightroom"></span>
+						</div>
+						<div class="post">
+							<p>Starting from scratch, it was an honor to create the brand of this lovely villa located in Sicily.<br>The name of the logo refers to the client grandma's name, Rosa.</p>
+						</div>
+					</header>
+				</section>
+				<section class="imagery">
+					<figure>
+						<img src="https://www.matteotona.com/images/rosa/rosapt-3.jpg" data-sizes="100vw" alt="  Cover" class=" lazyloaded" sizes="100vw" >
+					</figure>
+				</section>
+				<div class="post">
+					<p>Taking inspiration from elements that can be found in the most common seaside cities, I created 6 simple elements that I used for the logo composition, forming at the same time a rose, referring therefore to the logo name.</p>
+				</div>
+				<section class="imagery">
+					<figure>
+						<img src="https://www.matteotona.com/images/rosa/rosapt-2.png" data-sizes="100vw" alt="  Cover" class=" lazyloaded" sizes="100vw" >
+					</figure>
+				</section>
+				<section class="imagery">
+					<figure>
+						<img src="https://www.matteotona.com/images/rosa/rosapt-1.png" data-sizes="100vw" alt="  Cover" class=" lazyloaded" sizes="100vw" >
+					</figure>
+				</section>
+				<div class="projectrel">
+					<section class="related">
+						<div class="title">
+							<h2>More Projects</h2>
+						</div>
+						<div>
+							<a href="/design/npr-player/" class="projectlink">
+								<img src="https://ftc.imgix.net/design/npr-player/nprplayer-thumbnail-3x.jpg?w=300&amp;blur=100" data-sizes="100vw" alt="NPR Player" class="lazyload full">
+								<div>
+									NPR Player<span class="desc"> / Reshaping the cornerstone of NPR’s website</span>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="/design/the-manual-vol4/" class="projectlink">
+								<img src="https://ftc.imgix.net/design/the-manual-vol4/manual-thumbnail-3x.jpg?w=300&amp;blur=100" data-sizes="100vw" alt="The Manual, Vol. 4" class="lazyload full">
+								<div>
+									The Manual, Vol. 4<span class="desc"> / Designing pages about web pages</span>
+								</div>
+							</a>
+						</div>
+					</section>
+				</div>
+		</main>
+		<section class="related clients off" id="clients"></section>
+		<footer role="contentinfo" id="footer"></footer>
+	</div>
+</body>
+
+</html>
