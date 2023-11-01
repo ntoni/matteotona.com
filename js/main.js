@@ -96,22 +96,21 @@ Barba.Dispatcher.on('newPageReady', function(e) {
   })
 })
 
-// ------------------ MENU CHECK ------------------//
-
-var $elem = $('body'); // Get the DOM element from the jQuery object
-
-
-$(document).ready(function() {
-  $('body').on('DOMSubtreeModified', function() {
-    var bodyClass = $('body').attr('class');
-    var hasEmptyClass = bodyClass === "";
-    var hasOnlyNightmodeClass = bodyClass === "nightmode";
-
-    $('nav').toggleClass('visibleopacity', hasEmptyClass || hasOnlyNightmodeClass);
-  });
+/* Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
+  var navSub = document.getElementById('nav-sub');
   
-  $('body').trigger('DOMSubtreeModified');
-});
+  // Check if the current page is the index page
+  if (window.location.pathname === '/index.html') {
+    navSub.style.display = 'block'; // Reappear the #nav-sub element
+    navSub.style.opacity = '1'; // In case it was previously faded out
+  } else {
+    navSub.style.opacity = '0'; // Fade out the #nav-sub element
+    setTimeout(function() {
+      navSub.style.display = 'none'; // Hide the #nav-sub element after fading out
+    }, 500); // Adjust the timeout value as needed
+  }
+}); */
+
 
 
 // ------------------ NIGHTMODE ------------------- //
@@ -185,3 +184,25 @@ $(window).on('load', function() {
     });
   }
 });
+
+
+// ------------------ GALLERY GEN ------------------- //
+
+
+
+/* $(document).ready(function() {
+  for (var i = 1; i <= 163; i++) {
+    var paddedIndex = pad(i, 3); // Call the pad function to format i with 3 digits
+    var imageNumber = "" + paddedIndex;
+    $("#gallerycol").append("<a href='https://ik.imagekit.io/ntoni/photo_" + imageNumber + ".jpg?tr=w-1920,dpr-1 1x, https://ik.imagekit.io/ntoni/photo_" + imageNumber + ".jpg?tr=w-1920,dpr-2 2x, https://ik.imagekit.io/ntoni/photo_" + imageNumber + ".jpg.jpg?tr=w-1920,dpr-3 3x' data-pswp-width='4160' data-pswp-height='2340' target='_blank'><img class='lazyload' data-src='https://ik.imagekit.io/ntoni/photo_" + imageNumber + ".jpg?tr=h-350,dpr-1 2x' src='https://ik.imagekit.io/ntoni/photo_" + imageNumber + ".jpg?tr=h-350,dpr-1 2x' alt='' /></a>");
+  }
+});
+
+function pad(number, length) {
+  var str = '' + number;
+  while (str.length < length) {
+    str = '0' + str;
+  }
+  return str;
+} */
+

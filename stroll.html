@@ -15,7 +15,8 @@
 	<!-- styles -->
 	<link rel="stylesheet" href="css/screen.css" type="text/css">
 	<link rel="stylesheet" href="css/print.css" type="text/css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="https://unpkg.com/@phosphor-icons/web"></script>
+	<link rel="stylesheet" href="/photoswipe/dist/photoswipe.css">
 
 	<!-- js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -127,18 +128,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="container">
 		<nav role="navigation" class="prj" id="nav"></nav>
 		<div class="intro-container" id="intro"></div>
-		<nav class="sub-menu" id="nav-sub"></nav>
+		<nav class="sub-menu dynamic" id="nav-sub"></nav>
 		<main id="barba-wrapper">
 			<div class="barba-container" id="site-content">
-				<section class="grid two-col description">
-					<header>
-						<div class="title-intro">
-							<h2>Art Direction</h2>
-							<span class="subline">
-								<a class="brands descrz" href="projects-brands">Branding</a><span class="desc"> / Stroll</span>
-							</span>
-						</div>
-						<div class="sw">
+				<section class="description">
+					<div class="title-intro">
+						<h2>Stroll</h2>
+						<span class="subline">
+							<span class="desc">Art Direction</span>
+						</span>
+					</div>
+					<div class="sw">
+						<span class="subline">Tools & Languages</span>
+						<div class="icons">
 							<span class="photoshop"></span>
 							<span class="illustrator"></span>
 							<span class="lightroom"></span>
@@ -146,68 +148,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<span class="html"></span>
 							<span class="css"></span>
 						</div>
-						<div class="post">
-							<p>This is the most innovative project I've ever worked on for a Travel Company. <br> I consider it a 360° project, because it let me play with different technologies and learning new things.</p>
-						</div>
-					</header>
+					</div>
 				</section>
-				<section class="imagery">
-					<figure>
-						<img src="https://www.matteotona.com/images/stroll/stroll-0.jpg" data-sizes="100vw" alt="  Cover" class=" lazyloaded" sizes="100vw" >
-					</figure>
-				</section>
-				<div class="post">
-					<p>Starting from design the brand identity, I created the fisical gadgets and, once printed, I could feel and touch the product I was creating. I designed the backpack, magnets, starting instructions and pocket counter displays</p>
-				</div>
-				<section class="imagery">
-					<figure>
-						<img src="https://www.matteotona.com/images/stroll/stroll-4.jpg" data-sizes="100vw" alt="  Cover" class=" lazyloaded" sizes="100vw" >
-					</figure>
-				</section>
-				<div class="post">
-					<p>After that, I created the UI of the app for Android and iOS, exporting about a hundred screens in total. Finally, I designed the website. In this case I created different creativity to represent the tours of the city, trying to make them iconic.</p>
-				</div>
-				<section class="imagery">
-					<figure>
-						<img src="https://www.matteotona.com/images/stroll/stroll-2.jpg" data-sizes="100vw" alt="  Cover" class=" lazyloaded" sizes="100vw" >
-					</figure>
-				</section>
-				<div class="post">
-					<p>Finally, I developed 3D mock-ups for VR technology implemented in virtual tours, showing how, thanks to the app, it will be possible to use 3D models in real life and make the experience absolutely awesome.</p>
-				</div>
-				<section class="imagery">
-					<figure>
-						<img src="https://www.matteotona.com/images/stroll/stroll-1.jpg" data-sizes="100vw" alt="  Cover" class=" lazyloaded" sizes="100vw" >
-					</figure>
-				</section>
-				<section class="imagery">
-					<figure>
-						<img src="https://www.matteotona.com/images/stroll/stroll-3.jpg" data-sizes="100vw" alt="  Cover" class=" lazyloaded" sizes="100vw" >
-					</figure>
-				</section>
-				<div class="projectrel">
-					<section class="related">
-						<div class="title">
-							<h2>More Projects</h2>
-						</div>
-						<div>
-							<a href="/design/npr-player/" class="projectlink">
-								<img src="https://ftc.imgix.net/design/npr-player/nprplayer-thumbnail-3x.jpg?w=300&amp;blur=100" data-sizes="100vw" alt="NPR Player" class="lazyload full">
-								<div>
-									NPR Player<span class="desc"> / Reshaping the cornerstone of NPR’s website</span>
-								</div>
-							</a>
-						</div>
-						<div>
-							<a href="/design/the-manual-vol4/" class="projectlink">
-								<img src="https://ftc.imgix.net/design/the-manual-vol4/manual-thumbnail-3x.jpg?w=300&amp;blur=100" data-sizes="100vw" alt="The Manual, Vol. 4" class="lazyload full">
-								<div>
-									The Manual, Vol. 4<span class="desc"> / Designing pages about web pages</span>
-								</div>
-							</a>
-						</div>
+				<section class="article">
+					<div class="post">
+						<p>This is the most innovative project I've ever worked on for a Travel Company. <br> I consider it a 360° project, because it let me play with different technologies and learning new things.</p>
+					</div>
+					<section class="imagery">
+						<figure>
+							<img src="https://www.matteotona.com/images/stroll/stroll-0.jpg" data-sizes="100vw" alt="  Cover" class=" lazyloaded" sizes="100vw" >
+						</figure>
 					</section>
-				</div>
+					<div class="post">
+						<p>Starting from design the brand identity, I created the fisical gadgets and, once printed, I could feel and touch the product I was creating. I designed the backpack, magnets, starting instructions and pocket counter displays</p>
+					</div>
+					<section class="imagery">
+						<figure>
+							<img src="https://www.matteotona.com/images/stroll/stroll-4.jpg" data-sizes="100vw" alt="  Cover" class=" lazyloaded" sizes="100vw" >
+						</figure>
+					</section>
+					<div class="post">
+						<p>After that, I created the UI of the app for Android and iOS, exporting about a hundred screens in total. Finally, I designed the website. In this case I created different creativity to represent the tours of the city, trying to make them iconic.</p>
+					</div>
+					<section class="imagery">
+						<figure>
+							<img src="https://www.matteotona.com/images/stroll/stroll-2.jpg" data-sizes="100vw" alt="  Cover" class=" lazyloaded" sizes="100vw" >
+						</figure>
+					</section>
+					<div class="post">
+						<p>Finally, I developed 3D mock-ups for VR technology implemented in virtual tours, showing how, thanks to the app, it will be possible to use 3D models in real life and make the experience absolutely awesome.</p>
+					</div>
+					<section class="imagery">
+						<figure>
+							<img src="https://www.matteotona.com/images/stroll/stroll-1.jpg" data-sizes="100vw" alt="  Cover" class=" lazyloaded" sizes="100vw" >
+						</figure>
+					</section>
+					<section class="imagery">
+						<figure>
+							<img src="https://www.matteotona.com/images/stroll/stroll-3.jpg" data-sizes="100vw" alt="  Cover" class=" lazyloaded" sizes="100vw" >
+						</figure>
+					</section>
+				</section>
+			</div>
 		</main>
 		<section class="related clients off" id="clients"></section>
 		<footer role="contentinfo" id="footer"></footer>

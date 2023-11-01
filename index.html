@@ -15,13 +15,13 @@
 	<link rel="stylesheet" href="css/screen.css" type="text/css">
 	<link rel="stylesheet" href="css/print.css" type="text/css">
 	<script src="https://unpkg.com/@phosphor-icons/web"></script>
+	<link rel="stylesheet" href="/photoswipe/dist/photoswipe.css">
 
 	<!-- js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<script src="js/barba.min.js"></script>
 	<script src="js/main.js" charset="utf-8"></script>
-	<script src="js/lazysizes.min.js" async=""></script>
 	<script>
 		$(document).ready(function(){
 	      	$.get('menu.html',function(response){
@@ -38,6 +38,7 @@
 			});
 		});
 	</script>
+	
 	<script type='text/javascript'>
 	try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){return ua.indexOf(t)>-1},g='gecko',w='webkit',s='safari',o='opera',m='mobile',h=document.documentElement,b=[(!(/opera|webtv/i.test(ua))&&/msie\s(\d)/.test(ua))?('ie ie'+RegExp.$1):is('firefox/2')?g+' ff2':is('firefox/3.5')?g+' ff3 ff3_5':is('firefox/3.6')?g+' ff3 ff3_6':is('firefox/3')?g+' ff3':is('gecko/')?g:is('opera')?o+(/version\/(\d+)/.test(ua)?' '+o+RegExp.$1:(/opera(\s|\/)(\d+)/.test(ua)?' '+o+RegExp.$2:'')):is('konqueror')?'konqueror':is('blackberry')?m+' blackberry':is('android')?m+' android':is('chrome')?w+' chrome':is('iron')?w+' iron':is('applewebkit/')?w+' '+s+(/version\/(\d+)/.test(ua)?' '+s+RegExp.$1:''):is('mozilla/')?g:'',is('j2me')?m+' j2me':is('iphone')?m+' iphone':is('ipod')?m+' ipod':is('ipad')?m+' ipad':is('mac')?'mac':is('darwin')?'mac':is('webtv')?'webtv':is('win')?'win'+(is('windows nt 6.0')?' vista':''):is('freebsd')?'freebsd':(is('x11')||is('linux'))?'linux':'','js']; c = b.join(' '); h.className += ' '+c; return c;}; css_browser_selector(navigator.userAgent);}catch(e){}
 	</script>
@@ -101,75 +102,214 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 	<div class="container">
 		<nav role="navigation" id="nav"></nav>
-		<nav class="sub-menu" id="nav-sub"></nav>
+		<nav class="sub-menu dynamic" id="nav-sub"></nav>
 		<main id="barba-wrapper">
 			<div class="barba-container" id="site-content">
+				<nav class="sub-menu" id="nav-sub">
+					<ul class="intro limit menu">
+						<div class="introd">
+						  <div>
+							<li>Hi, I'm <a href="about.html" id="more">Matteo Tona,</a></li>
+							  <li>a visual and brand designer based in Kuala Lumpur</li>
+						  </div>
+						  <a class="button" id="button">Contact me</a>
+						</div>
+						<div class="tabs">
+						  <li class="recent active"><a href="index.html">Brands and Visuals</a></li>
+						  <li class="brands disable"><a href="personal.html">Photography</a></li>
+						</div>
+					  </ul>
+				</nav>
 				<h1 class="home">I'm an user experience lover, design apps, ads, brands and websites</h1>
 				<section class="related designprojects first">
-					
 					<div>
-						<a href="dcg-social.html" class="projectlink">
-							<img src="https://www.matteotona.com/images/dcg-thumb.png" data-sizes="100vw" alt="Abstract" class="lazyload full">
-							<div>
-								<a class="ads descrz" href="projects-ads">Ads</a><span class="desc"> / Dcg</span>
-							</div>
+						<a href="lexdo.html" class="projectlink">
+							<img src="images/covers/lexdo.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
 						</a>
+						<div class="descriptions">
+							<div>
+								<a class="websites descrz" href="projects-websites">Website</a>
+							</div>
+							<span class="desc">Yumami</span>
+						</div>
+					</div>
+					<div>
+						<a href="vfc.html" class="projectlink">
+							<img src="images/covers/vfc.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
+						</a>
+						<div class="descriptions">
+							<div>
+								<a class="websites descrz" href="projects-websites">Website</a>
+							</div>
+							<span class="desc">Yumami</span>
+						</div>
+					</div>
+					<div>
+						<a href="buildo.html" class="projectlink">
+							<img src="images/covers/buildo.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
+						</a>
+						<div class="descriptions">
+							<div>
+								<a class="websites descrz" href="projects-websites">Website</a>
+							</div>
+							<span class="desc">Yumami</span>
+						</div>
+					</div>
+					<div>
+						<a href="ukiyo.html" class="projectlink">
+							<img src="images/covers/ukiyo.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
+						</a>
+						<div class="descriptions">
+							<div>
+								<a class="websites descrz" href="projects-websites">Website</a>
+							</div>
+							<span class="desc">Yumami</span>
+						</div>
+					</div>
+					<div>
+						<a href="vox.html" class="projectlink">
+							<img src="images/covers/vox.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
+						</a>
+						<div class="descriptions">
+							<div>
+								<a class="websites descrz" href="projects-websites">Website</a>
+							</div>
+							<span class="desc">Yumami</span>
+						</div>
 					</div>
 					<div>
 						<a href="stroll.html" class="projectlink">
-							<img src="https://www.matteotona.com/images/stroll-thumb.png" data-sizes="100vw" alt="Faculty" class="lazyload full">
-							<div>
-								<a class="brands descrz" href="projects-brands">Branding</a>, <a class="websites descrz" href="projects-websites">Website</a>, <a class="print descrz" href="projects-print">Print</a><span class="desc"> / Stroll</span>
-							</div>
+							<img src="images/covers/stroll.jpg" data-sizes="100vw" alt="Faculty" class="lazyload full">
 						</a>
+						<div class="descriptions">
+							<div>
+								<a class="brands descrz" href="projects-brands">Branding</a>, <a class="websites descrz" href="projects-websites">Website</a>, <a class="print descrz" href="projects-print">Print</a>
+							</div>
+							<span class="desc">Stroll</span>
+						</div>
 					</div>
+					<div>
+						<a href="dcg-social.html" class="projectlink">
+							<img src="images/covers/dcg.jpg" data-sizes="100vw" alt="Abstract" class="lazyload full">
+						</a>
+						<div class="descriptions">
+							<div>
+								<a class="ads descrz" href="projects-ads">Ads</a>
+							</div>
+							<span class="desc">Dcg</span>
+						</div>
+					</div>
+					
 					<div>
 						<a href="odcec-event.html" class="projectlink">
-							<img src="https://www.matteotona.com/images/odcec-event.png" data-sizes="100vw" alt="Faculty" class="lazyload full">
-							<div>
-								<a class="brands descrz" href="projects-brands">Branding</a>, <a class="ads descrz" href="projects-ads">Ads</a><span class="desc"> / Odcec</span>
-							</div>
+							<img src="images/covers/event.jpg" data-sizes="100vw" alt="Faculty" class="lazyload full">
 						</a>
-					</div>
-					<div>
-						<a href="valtur-bleisure.html" class="projectlink">
-							<img src="https://www.matteotona.com/images/valtur.png"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
+						<div class="descriptions">
 							<div>
-								<a class="websites descrz" href="projects-websites">Website</a><span class="desc"> / Valtur</span>
+								<a class="brands descrz" href="projects-brands">Branding</a>, <a class="ads descrz" href="projects-ads">Ads</a>
 							</div>
-						</a>
+							<span class="desc">Odcec</span>
+						</div>
 					</div>
 					<div>
 						<a href="iff-video.html" class="projectlink">
-							<img src="https://www.matteotona.com/images/trailer.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
-							<div>
-								<a class="video descrz" href="projects-video">Video</a><span class="desc"> / Embassy of Italy in Kuala Lumpur</span>
-							</div>
+							<img src="images/covers/iff2018.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
 						</a>
+						<div class="descriptions">
+							<div>
+								<a class="video descrz" href="projects-video">Video</a>
+							</div>
+							<span class="desc">Embassy of Italy in Kuala Lumpur</span>
+						</div>
 					</div>
 					<div>
-						<a href="rexton.html" class="projectlink">
-							<img src="https://www.matteotona.com/images/rexton-thumb.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
-							<div>
-								<a class="ads descrz" href="projects-ads">Ads</a><span class="desc"> / Rexton</span>
-							</div>
+						<a href="valtur-bleisure.html" class="projectlink">
+							<img src="images/covers/valtur.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
 						</a>
+						<div class="descriptions">
+							<div>
+								<a class="websites descrz" href="projects-websites">Website</a>
+							</div>
+							<span class="desc">Valtur</span>
+						</div>
+					</div>
+					
+					<div>
+						<a href="rexton.html" class="projectlink">
+							<img src="images/covers/rexton.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
+						</a>
+						<div class="descriptions">
+							<div>
+								<a class="ads descrz" href="projects-ads">Ads</a>
+							</div>
+							<span class="desc">Rexton</span>
+						</div>
 					</div>
 					<div>
 						<a href="rosa-apt.html" class="projectlink">
-							<img src="https://www.matteotona.com/images/rosa-thumb.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
-							<div>
-								<a class="print descrz" href="projects-print">Print</a><span class="desc"> / Rosa apt</span>
-							</div>
+							<img src="images/covers/rosapt.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
 						</a>
+						<div class="descriptions">
+							<div>
+								<a class="print descrz" href="projects-print">Print</a>
+							</div>
+							<span class="desc">Rosa apt</span>
+						</div>
 					</div>
 					<div>
 						<a href="yumami.html" class="projectlink">
-							<img src="https://www.matteotona.com/images/yumami-thumb.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
-							<div>
-								<a class="websites descrz" href="projects-websites">Website</a><span class="desc"> / Yumami</span>
-							</div>
+							<img src="images/covers/yumami.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
 						</a>
+						<div class="descriptions">
+							<div>
+								<a class="websites descrz" href="projects-websites">Website</a>
+							</div>
+							<span class="desc">Yumami</span>
+						</div>
+					</div>
+					<div>
+						<a href="redooc.html" class="projectlink">
+							<img src="images/covers/redooc.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
+						</a>
+						<div class="descriptions">
+							<div>
+								<a class="websites descrz" href="projects-websites">Website</a>
+							</div>
+							<span class="desc">Yumami</span>
+						</div>
+					</div>
+					<div>
+						<a href="odcec-agenda.html" class="projectlink">
+							<img src="images/covers/agenda.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
+						</a>
+						<div class="descriptions">
+							<div>
+								<a class="websites descrz" href="projects-websites">Website</a>
+							</div>
+							<span class="desc">Yumami</span>
+						</div>
+					</div>
+					<div>
+						<a href="vao.html" class="projectlink">
+							<img src="images/covers/vao.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
+						</a>
+						<div class="descriptions">
+							<div>
+								<a class="websites descrz" href="projects-websites">Website</a>
+							</div>
+							<span class="desc">Yumami</span>
+						</div>
+					</div>
+					<div>
+						<a href="bad.html" class="projectlink">
+							<img src="images/covers/bad.jpg"  data-sizes="100vw" alt="Hiatus" class="lazyload full">
+						</a>
+						<div class="descriptions">
+							<div>
+								<a class="websites descrz" href="projects-websites">Website</a>
+							</div>
+							<span class="desc">Yumami</span>
+						</div>
 					</div>
 					<!-- <div class="arrows">
 						<a href="projects-video" class="projectlink">

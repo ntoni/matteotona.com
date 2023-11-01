@@ -15,7 +15,8 @@
 	<!-- styles -->
 	<link rel="stylesheet" href="css/screen.css" type="text/css">
 	<link rel="stylesheet" href="css/print.css" type="text/css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="https://unpkg.com/@phosphor-icons/web"></script>
+	<link rel="stylesheet" href="/photoswipe/dist/photoswipe.css">
 
 	<!-- js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -31,9 +32,6 @@
 			$.get('intro.html',function(response){
           $('#intro').html(response);
       });
-			$.get('menu-projects.html', function(response) {
-				$('#nav-sub').html(response);
-			});
 			$.get('clients.html', function(response) {
 				$('#clients').html(response);
 			});
@@ -127,7 +125,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="container">
 		<nav role="navigation" class="about" id="nav"></nav>
 		<div class="intro-container" id="intro"></div>
-		<nav class="sub-menu" id="nav-sub"></nav>
+		<nav class="sub-menu dynamic" id="nav-sub"></nav>
 		<main id="barba-wrapper">
 			<div class="barba-container" id="site-content">
 				<h1 class="intro"></h1>

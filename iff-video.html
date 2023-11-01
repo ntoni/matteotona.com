@@ -15,7 +15,8 @@
 	<!-- styles -->
 	<link rel="stylesheet" href="css/screen.css" type="text/css">
 	<link rel="stylesheet" href="css/print.css" type="text/css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="https://unpkg.com/@phosphor-icons/web"></script>
+	<link rel="stylesheet" href="/photoswipe/dist/photoswipe.css">
 
 	<!-- js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -127,57 +128,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="container">
 		<nav role="navigation" class="prj" id="nav"></nav>
 		<div class="intro-container" id="intro"></div>
-		<nav class="sub-menu" id="nav-sub"></nav>
+		<nav class="sub-menu dynamic" id="nav-sub"></nav>
 		<main id="barba-wrapper">
 			<div class="barba-container" id="site-content">
-				<section class="grid two-col description">
-					<header>
-						<div class="title-intro">
-							<h2>Trailer - Italian Film Festival 2018</h2>
-							<span class="subline">
-								<a class="video descrz" href="projects-video">Video</a><span class="desc"> / Embassy of Italy in Kuala Lumpur</span>
-							</span>
-						</div>
-						<div class="sw">
+				<section class="description">
+					<div class="title-intro">
+						<h2>Italian Film Festival</h2>
+						<span class="subline">
+							<span class="desc">Video Editing</span>
+						</span>
+					</div>
+					<div class="sw">
+						<span class="subline">Tools & Languages</span>
+						<div class="icons">
 							<span class="premiere"></span>
-							<span class="audition"></span>
 						</div>
-						<div class="post">
-							<p>I created this mashup of 5 selected italian titles from various genres, which was shown in several cinemas during the Italian Film Festival 2018 in Kuala Lumpur, Malaysia.</p>
-						</div>
-					</header>
+					</div>
 				</section>
-				<section class="imagery">
-					<figure>
-						<video preload="yes" autoplay muted controls="yes" loop width="100%" height="auto" poster="https://www.matteotona.com/images/dcg/poster-iff.jpg">
-	            <source src="https://www.matteotona.com/images/dcg/IFF.mp4" type="video/mp4">
-							<source src="https://www.matteotona.com/images/dcg/IFF.webm" type="video/webm">
-						</video>
-					</figure>
-				</section>
-				<div class="projectrel">
-					<section class="related">
-						<div class="title">
-							<h2>More Projects</h2>
-						</div>
-						<div>
-							<a href="/design/npr-player/" class="projectlink">
-								<img src="https://ftc.imgix.net/design/npr-player/nprplayer-thumbnail-3x.jpg?w=300&amp;blur=100" data-sizes="100vw" alt="NPR Player" class="lazyload full">
-								<div>
-									NPR Player<span class="desc"> / Reshaping the cornerstone of NPR’s website</span>
-								</div>
-							</a>
-						</div>
-						<div>
-							<a href="/design/the-manual-vol4/" class="projectlink">
-								<img src="https://ftc.imgix.net/design/the-manual-vol4/manual-thumbnail-3x.jpg?w=300&amp;blur=100" data-sizes="100vw" alt="The Manual, Vol. 4" class="lazyload full">
-								<div>
-									The Manual, Vol. 4<span class="desc"> / Designing pages about web pages</span>
-								</div>
-							</a>
-						</div>
+				<section class="article">
+					<section class="imagery">
+						<figure>
+							<video preload="yes" autoplay muted controls="yes" loop width="100%" height="auto" poster="https://www.matteotona.com/images/dcg/poster-iff.jpg">
+					<source src="https://www.matteotona.com/images/dcg/IFF.mp4" type="video/mp4">
+								<source src="https://www.matteotona.com/images/dcg/IFF.webm" type="video/webm">
+							</video>
+						</figure>
 					</section>
-				</div>
+				</section>
+			</div>
 		</main>
 		<section class="related clients off" id="clients"></section>
 		<footer role="contentinfo" id="footer"></footer>
