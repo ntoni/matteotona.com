@@ -1829,6 +1829,12 @@ ul.talk small{
     .my-gallery .column{
       gap: 8px!important;
     }
+    .my-gallery .column a{
+      height: 150px!important;
+    }
+    .my-gallery .column img{
+      height: 150px!important;
+    }
     .workgrid{
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -2058,13 +2064,14 @@ section.post p{
 }
 .my-gallery .column{
   display: flex;
-  gap: 24px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 .my-gallery .column a{
   flex-grow: 1;
   margin: 2px;
-  height: 100px;
+  height: 350px;
+  pointer-events: none;
 }
 /* .my-gallery .column a:nth-child(5),
 .my-gallery .column a:nth-child(4),
@@ -2074,7 +2081,7 @@ section.post p{
   flex-grow: 0;
 } */
 .my-gallery .column img {
-  height: 100px;
+  height: 350px;
   object-fit: cover;
   max-width: 100%;
   min-width: 100%;
