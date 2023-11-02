@@ -60,7 +60,7 @@ div.container{
     align-items: center;
 }
 /* div.container:before{
-    background-image: url('/images/bkg.png');
+    background-image: url('https://ik.imagekit.io/ntoni/bkg.png');
     content:'';
     opacity: 0.05;
     display: block;
@@ -90,7 +90,7 @@ a:active{
 }
 a.button, a#button{
     border-radius: 16px;
-    background: var(--ntoni-black, #1A212B)!important;
+    background: var(--ntoni-black, #1A212B);
     display: flex;
     padding: 12px 16px;
     justify-content: center;
@@ -98,7 +98,7 @@ a.button, a#button{
     gap: 12px;
     width: fit-content;
     height: 48px;
-    color: #fff!important;
+    color: #fff;
     font-weight: 500;
     font-size: 18px!important;
 }
@@ -473,7 +473,7 @@ span.desc{
   
 }
 .nightmode span.desc{
-  color:#414141
+  color:#FFF
 }
 .intro-container{
   padding:4rem 2rem 3rem;
@@ -491,13 +491,13 @@ span.desc{
     visibility: initial!important;
     height: auto!important;
 } */
-.intro-box{
+/* .intro-box{ */
   /* padding: 15px 25px;
     background-color: #fff;
     border-radius: 11px;
     display: inline-block;
     width: 100% */
-}
+/* a */
 .intro-box h1{
   float: left;
 }
@@ -864,6 +864,17 @@ section.workgrid.project{
   max-width: 530px;
   line-height: 40px; 
 }
+.introd>div{
+  gap: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.introd img{
+  border-radius: 100%;
+  width: 64px;
+  height: 64px;
+}
 .sub-menu.dynamic{
   opacity: 0!important;
   visibility: hidden!important;
@@ -929,7 +940,7 @@ section.workgrid.project{
       color: #cccccc!important;
 }
 section.newsletter{
-    background:url(/images/scribble.gif);
+    background:url(https://ik.imagekit.io/ntoni/scribble.gif);
     background-size:cover;
     background-attachment:fixed;
     text-align:center;
@@ -1353,83 +1364,83 @@ section.article{
 }
 .nightmode .sw span{
   filter: invert(1);
-}
+} 
 .illustrator{
-  background:url(/images/software/illustrator-black.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/illustrator-black.svg);
 }
 .illustrator:hover{
-  background:url(/images/software/illustrator-color.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/illustrator-color.svg);
 }
 .photoshop{
-  background:url(/images/software/photoshop-black.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/photoshop-black.svg);
 }
 .photoshop:hover{
-  background:url(/images/software/photoshop-color.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/photoshop-color.svg);
 }
 .lightroom{
-  background:url(/images/software/lightroom-black.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/lightroom-black.svg);
 }
 .lightroom:hover{
-  background:url(/images/software/lightroom-color.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/lightroom-color.svg);
 }
 .premiere{
-  background:url(/images/software/premiere-black.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/premiere-black.svg);
 }
 .premiere:hover{
-  background:url(/images/software/premiere-color.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/premiere-color.svg);
 }
 .indesign{
-  background:url(/images/software/indesign-black.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/indesign-black.svg);
 }
 .indesign:hover{
-  background:url(/images/software/indesign-color.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/indesign-color.svg);
 }
 .css{
-  background:url(/images/software/css-black.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/css-black.svg);
   width: 20px!important;
 }
 .css:hover{
-  background:url(/images/software/css-color.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/css-color.svg);
   width: 20px!important;
 }
 .html{
-  background:url(/images/software/html-black.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/html-black.svg);
   width: 20px!important;
 }
 .html:hover{
-  background:url(/images/software/html-color.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/html-color.svg);
   width: 20px!important;
 }
 .aftereffect{
-  background:url(/images/software/aftereffect-black.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/aftereffect-black.svg);
 }
 .aftereffect:hover{
-  background:url(/images/software/aftereffect-color.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/aftereffect-color.svg);
 }
 .audition{
-  background:url(/images/software/audition-black.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/audition-black.svg);
 }
 .audition:hover{
-  background:url(/images/software/audition-color.svg);
+  background:url(https://ik.imagekit.io/ntoni/software/audition-color.svg);
 }
 .sketch{
-  background: url(/images/software/sketch-black.svg);
+  background: url(https://ik.imagekit.io/ntoni/software/sketch-black.svg);
 }
 .sketch:hover{
-  background: url(/images/software/sketch-color.svg);
+  background: url(https://ik.imagekit.io/ntoni/software/sketch-color.svg);
 }
 .wordpress{
-  background: url(/images/software/wordpress-black.svg);
+  background: url(https://ik.imagekit.io/ntoni/software/wordpress-black.svg);
 }
 .wordpress:hover{
-  background: url(/images/software/wordpress-color.svg);
+  background: url(https://ik.imagekit.io/ntoni/software/wordpress-color.svg);
 }
 .figma{
-  background: url(/images/software/figma-black.svg);
+  background: url(https://ik.imagekit.io/ntoni/software/figma-black.svg);
   width: 19px!important;
 }
 .figma:hover{
-  background: url(/images/software/figma-color.svg);
+  background: url(https://ik.imagekit.io/ntoni/software/figma-color.svg);
   width: 19px!important;
 }
 
@@ -2538,7 +2549,7 @@ div.postnav h3{
     margin:0 auto
 }
 .custom div.section.rainbowbreak{
-    background:url(/writing/what-screens-want/images/vertgrad.jpg)
+    background:url(/writing/what-screens-wanthttps://ik.imagekit.io/ntoni/vertgrad.jpg)
 }
 .custom div.section.rainbowbreak h1{
     color:#fff;
@@ -2698,7 +2709,7 @@ div.postnav h3{
     -webkit-animation-timing-function:linear
 }
 .custom div.rainbowbreak.somanyhorses{
-    background:url(/writing/what-screens-want/images/horseani.gif) center center
+    background:url(/writing/what-screens-wanthttps://ik.imagekit.io/ntoni/horseani.gif) center center
 }
 .custom div.section.rainbowbreak.last{
     min-height:100vh
@@ -2875,10 +2886,7 @@ body{
   -webkit-transition: all 0.5s; /* Safari */
   transition: background ease-in-out 0.4s;
 }
-.nightmode, .nightmode a{
-  color:#ffffff;  
-}
-.nightmode nav a{
+.nightmode, .nightmode a, .nightmode nav a, .nightmode .description h2{
   color:#ffffff;
 }
 .nightmode a:hover, .nightmode a:active, .nightmode a.active{
@@ -2888,7 +2896,7 @@ body.nightmode{
   background: #0a1118;
 }
 .nightmode .class, .nightmode a.projectlink span.desc, .nightmode .gallery__block.intro span.copyright{
-  color: rgba(106, 120, 134, 0.5);
+  color: #fff;
 }
 .nightmode .sub-menu ul.menu li.disable {
     color: #414141;
@@ -2904,3 +2912,4 @@ body.nightmode{
   background-color:#fff;
   color:#4b545c!important;
 }
+
