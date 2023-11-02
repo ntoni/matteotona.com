@@ -2847,6 +2847,12 @@ div.postnav h3{
   }
 } */
 @media(max-width:600px){
+  .introd>div{
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   /* .social{
     position: absolute!important;
     top: 33px;
