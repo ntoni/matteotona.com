@@ -102,12 +102,15 @@ a.button, a#button{
     font-weight: 500;
     font-size: 18px!important;
 }
-h1,h2{
-    font-size:1.2rem;
-    font-weight:600
+h1{
+    font-size:2rem;
+    font-weight:600;
+    margin:0;
 }
 h2{
-    margin-top:2rem
+    margin-top:1.2rem;
+    font-weight: 400;
+    line-height: 50%;
 }
 h3{
     font-weight:400
@@ -865,16 +868,60 @@ section.workgrid.project{
   line-height: 40px; 
 }
 .introd>div{
-  gap: 18px;
+  gap: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .introd img{
-  border-radius: 100%;
-  width: 64px;
-  height: 64px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+  width:68px;
+  border-radius:50%;
+
 }
+.gradient{
+  position:relative;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  transition: all 0.2s ease
+  /* background: linear-gradient(to right, red, orange); */
+}
+.gradient:hover{
+  transform: scale(1.1);
+}
+svg{
+  fill:none;
+  stroke:#ccc;
+  stroke-linecap: round;
+  stroke-width:3;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  animation: stroke-draw 6s ease-out infinite alternate; 
+  /* animation: stroke-draw 6s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate;  */
+}
+@keyframes stroke-draw {
+  from{
+    stroke:#8a3ab9;
+    stroke-dasharray: 1;
+  }
+  to{
+    stroke:#cd486b;
+    transform:rotate(180deg);
+    stroke-dasharray: 8;
+  }
+}
+
+
+
+
+
+
+
 .sub-menu.dynamic{
   opacity: 0!important;
   visibility: hidden!important;
@@ -1570,12 +1617,9 @@ img.about{
 .nightmode .barba-container section.about ul li span.descr{
   border-left-color: #292929;
 }
-section.about h1, section.about p, section.about ul{
+section.about p, section.about ul{
   font-size: 1rem;
   line-height: 1.9rem;
-}
-section.about h1{
-  font-size: 1.2rem;
 }
 section.about{
   /* margin-top: -70px; */
