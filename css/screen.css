@@ -101,6 +101,11 @@ a.button, a#button{
     color: #fff;
     font-weight: 500;
     font-size: 18px!important;
+    transition:all .2s ease
+}
+a#button:hover{
+    transform: scale(1.1);
+    filter: invert(1);
 }
 h1{
     font-size:2rem;
@@ -879,26 +884,26 @@ section.workgrid.project{
   left:50%;
   top:50%;
   transform:translate(-50%, -50%);
-  width:68px;
+  width:78px;
   border-radius:50%;
 
 }
 .gradient{
   position:relative;
-  width: 96px;
-  height: 96px;
+  width: 112px;
+  height: 112px;
   border-radius: 50%;
   transition: all 0.2s ease
   /* background: linear-gradient(to right, red, orange); */
 }
 .gradient:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 svg{
   fill:none;
   stroke:#ccc;
   stroke-linecap: round;
-  stroke-width:3;
+  stroke-width:2.5;
   stroke-dasharray: 1;
   stroke-dashoffset: 0;
   animation: stroke-draw 6s ease-out infinite alternate; 
@@ -906,21 +911,15 @@ svg{
 }
 @keyframes stroke-draw {
   from{
-    stroke:#8a3ab9;
+    stroke:#ccc;
     stroke-dasharray: 1;
   }
   to{
-    stroke:#cd486b;
+    stroke:#ccc;
     transform:rotate(180deg);
     stroke-dasharray: 8;
   }
 }
-
-
-
-
-
-
 
 .sub-menu.dynamic{
   opacity: 0!important;
@@ -1910,7 +1909,7 @@ ul.talk small{
       border-bottom-color: #171d1f
     }
     .sub-menu ul.menu div{
-      padding-top: 10px;
+      /* padding-top: 10px; */
       /* display: block;
       clear: left; */
       line-height: 120%;
