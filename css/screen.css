@@ -55,9 +55,14 @@ body{
 div.container{
     /* max-width:1500px; */
     display: flex;
-    padding: 24px 40px;
+    display: -webkit-flex;
     flex-direction: column;
     align-items: center;
+}
+@media(min-width:376px){
+  .container{
+    padding: 24px 40px;
+  }
 }
 /* div.container:before{
     background-image: url('https://ik.imagekit.io/ntoni/bkg.png');
@@ -92,6 +97,7 @@ a.button, a#button{
     border-radius: 16px;
     background: var(--ntoni-black, #1A212B);
     display: flex;
+    display: -webkit-flex;
     padding: 12px 16px;
     justify-content: center;
     align-items: center;
@@ -146,6 +152,7 @@ small{
 }
 div.naked{
   display: flex;
+  display: -webkit-flex;
   justify-content: space-between;
   align-items: center;
   flex: 1 0 0;
@@ -221,13 +228,16 @@ nav,footer{
     font-size:1rem;
     padding-bottom:1rem;
     display:flex;
+    display: -webkit-flex;
 }
 footer{
     font-size:.85rem;
     display: flex;
+    display: -webkit-flex;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
+    padding-top: 24px;
 }
 /* nav div{
   display: flex;
@@ -237,6 +247,7 @@ footer{
 } */
 nav .social{
   display: flex;
+  display: -webkit-flex;
   align-items: flex-start;
   gap: 8px;
 }
@@ -579,7 +590,8 @@ div.maintain img{
     .related{
         display:grid;
         grid-template-columns:1fr;
-        grid-gap:2rem
+        grid-gap:2rem;
+        width: 100%;
     }
     .related h2{
         margin-bottom:0
@@ -602,6 +614,24 @@ div.maintain img{
     line-height: 1.7!important;
     font-weight: 600;
     color:rgba(45,55,65,.85);
+}
+@media(max-width:375px){
+  .container{
+    padding: 16px!important;
+  }
+  nav#nav {
+    padding-bottom: 2rem!important;
+  }
+  .sub-menu ul.menu, .sub-menu .introd a {
+    font-size: 1.5rem!important;
+  }
+  .introd img {
+    width: 65px!important;
+  }
+  .gradient {
+    width: 95px!important;
+    height: 95px!important;
+  }
 }
 @media(min-width:200px){
     .related.clients{
@@ -836,6 +866,7 @@ section.workgrid.project{
 
 .sub-menu{
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -847,6 +878,7 @@ section.workgrid.project{
 }
 .sub-menu ul.menu{
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
@@ -860,6 +892,7 @@ section.workgrid.project{
 }
 .sub-menu ul.menu li{
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
@@ -867,6 +900,7 @@ section.workgrid.project{
 }
 .sub-menu ul.menu .introd{
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
@@ -876,6 +910,7 @@ section.workgrid.project{
 .introd>div{
   gap: 8px;
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   align-items: center;
 }
@@ -929,6 +964,7 @@ svg{
 }
 .tabs{
   display: flex;
+  display: -webkit-flex;
   align-items: flex-start;
 }
 .tabs li.active{
@@ -939,9 +975,11 @@ svg{
 }
 .tabs li{
   display: flex;
+  display: -webkit-flex;
 }
 .tabs li a{
   display: flex;
+  display: -webkit-flex;
   padding: 16px;
   justify-content: center;
   align-items: center;
@@ -1277,11 +1315,11 @@ section.worknav a{
     .imagery figure{
       width: 100%;
     }
-    .imagery.duo{
+    .imagery-box{
       flex-direction: row!important;
     }
-    .imagery.duo figure{
-      flex: 1 0 0;
+    .imagery-box figure{
+      flex: 40%;
     }
 }
 @media(min-width:900px){
@@ -1305,10 +1343,12 @@ section.imagery:first-of-type figure:first-of-type{
 }
 section.imagery {
   display: flex;
+  display: -webkit-flex;
   align-items: flex-start;
   justify-content: center;
   gap: 16px;
   align-self: stretch;
+  margin: 24px 0;
 }
 section.imagery figure{
     margin:0!important
@@ -1329,13 +1369,17 @@ section.imagery figure{
 }
 .description{
     display: flex;
+    display: -webkit-flex;
+    max-width: 1280px;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     align-content: center;
-    row-gap: 16px;
+    row-gap: 8px;
     align-self: stretch;
     flex-wrap: wrap;
-    padding-bottom: 40px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 80px;
 }
 
 .description div.post p:last-child{
@@ -1361,6 +1405,7 @@ section.imagery figure{
 }
 section.article{
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
@@ -1368,6 +1413,51 @@ section.article{
 }
 .post{
   align-self: stretch;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+.imagery-box{
+  margin: 0 auto;
+  width: auto;
+  display: flex;
+  display: -webkit-flex;
+  padding: 64px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  align-self: stretch;
+  max-width: 1280px;
+}
+.imagery-box.wrap{
+  flex-wrap: wrap;
+}
+.imagery-box.caption{
+  flex-direction: column!important;
+  align-items: flex-end;
+  gap: 4px;
+}
+.imagery-box.caption p{
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  display: table-row;
+  vertical-align: bottom;
+  height: 0px;
+  color: #949494;
+}
+.imagery, .imagery.duo{
+  background: #F6F8FB;
+  transition: background .3s;
+}
+.imagery.single{
+  flex-direction: row!important;
+  align-items:center;
+  background-color: transparent!important;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.imagery-box figure{
+  box-shadow: 2px 4px 16px 0 rgba(0, 0, 0, 0.09);
 }
 .projectrel{
     background-size:cover;
@@ -1378,12 +1468,14 @@ section.article{
 }
 .title-intro{
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items:start;
   gap: 4px;
 }
 .sw{
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
@@ -1394,12 +1486,14 @@ section.article{
 }
 .sw .icons{
   display: flex;
+  display: -webkit-flex;
   justify-content: center;
   align-items: flex-start;
   gap: 8px;
 }
 .sw .icons span{
   display: flex;
+  display: -webkit-flex;
   width: 23px;
   height: 23px;
   justify-content: center;
@@ -1539,6 +1633,7 @@ img.about{
 }
 .barba-container{
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   align-items: center;
   align-self: stretch;
@@ -1635,7 +1730,7 @@ section.about{
         /* display:grid; */
         /* grid-template-columns:1fr 1fr; */
         /* grid-gap:0 2rem; */
-        align-items:flex-start;
+        /* align-items:flex-start; */
     }
     .description div.post p:first-child{
         margin-top:0
@@ -1658,9 +1753,9 @@ section.about{
     .class{
         font-size:1.4rem
     }
-    .description{
+    /* .description{
         padding:0rem 0 3rem
-    }
+    } */
     .projectrel{
         margin:4rem -4rem 0;
         padding:4rem 4rem 2rem
@@ -1692,9 +1787,9 @@ section.about{
     .projectrel{
         padding:4rem 4rem 2rem
     }
-    .description{
+    /* .description{
         grid-gap:4rem
-    }
+    } */
 }
 @media(min-width:1500px){
     .projectrel{
@@ -1722,6 +1817,14 @@ section.about{
   a#more{
 
   }
+  .imagery-box{
+    padding: 40px 24px;
+    gap: 24px;
+  }
+  section.article{
+    gap: 8px;
+  }
+  
 }
 @media(min-width:1000px) and (max-width:1400px){
   .gallery__block.intro {
@@ -1832,7 +1935,7 @@ ul.talk small{
 }
 @media(max-width:600px){
     .container{
-      padding: 24px 24px!important;
+      padding: 24px;
     }
     .aboutgrid{
         margin-left:-2rem;
@@ -1845,7 +1948,7 @@ ul.talk small{
       margin-top: 0px!important;
     }
     .sub-menu ul.menu, .sub-menu .introd a {
-      font-size: 1.8rem;
+      font-size: 1.7rem;
     }
     ul.menu li.mobile{
       display: inline-block;
@@ -1918,11 +2021,14 @@ ul.talk small{
     .index .sub-menu, .projects-brands .sub-menu, .projects-websites .sub-menu, .projects-apps .sub-menu, .projects-ads .sub-menu, .projects-print .sub-menu, .projects-video .sub-menu{
       padding-bottom: 0
     }
-    .imagery.duo{
-      flex-direction: column;
+    .imagery.duo.mobile .imagery-box{
+      flex-direction: column!important;
     }
     .sw .subline{
       display: none!important;
+    }
+    .description{
+      padding-bottom: 40px!important;
     }
 }
 @media(min-width:550px){
@@ -1964,7 +2070,7 @@ ul.talk small{
 }
 @media(max-width:1000px){
   nav#nav{
-    padding-bottom: 3rem;
+    padding-bottom: 2.5rem;
   }
   .about .download-btn{
       padding: 3px 10px;
@@ -2113,12 +2219,14 @@ section.post p{
 }
 .my-gallery{
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
   gap: 24px;
   padding-top: 24px;
 }
 .my-gallery .column{
   display: flex;
+  display: -webkit-flex;
   gap: 16px;
   flex-wrap: wrap;
 }
@@ -2299,6 +2407,7 @@ section.post p{
 @media(min-width:500px){
     section.post a{
         display:flex;
+        display: -webkit-flex;
         align-items:baseline;
         justify-content:space-between
     }
@@ -2894,6 +3003,8 @@ div.postnav h3{
   .introd>div{
     gap: 2px;
     display: flex;
+    display: -webkit-flex;
+    display: -webkit-flex;
     flex-direction: column;
     align-items: center;
   }
@@ -2963,3 +3074,7 @@ body.nightmode{
   color:#4b545c!important;
 }
 
+.nightmode .imagery, .nightmode .imagery.duo{
+  background-color: #333;
+  transition: background .3s;
+}
