@@ -186,11 +186,48 @@ $(window).on('load', function() {
 });
 
 
+/* ------------- MENU OPEN --------------- */
+
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+function preventDefault(e) {
+  e.preventDefault();
+}
+
+function preventDefaultForScrollKeys(e) {
+  if (keys[e.keyCode]) {
+    preventDefault(e);
+    return false;
+  }
+}
+
+// modern Chrome requires { passive: false } when adding event
+var supportsPassive = false;
+try {
+  window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+    get: function () { supportsPassive = true; } 
+  }));
+} catch(e) {}
+
+var wheelOpt = supportsPassive ? { passive: false } : false;
+var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+// call this to Disable
+function disableScroll() {
+  window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+  window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+
+// call this to Enable
+function enableScroll() {
+  window.removeEventListener('DOMMouseScroll', preventDefault, false);
+  window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
+  window.removeEventListener('touchmove', preventDefault, wheelOpt);
+  window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+}
 // ------------------ GALLERY  ------------------- //
-
-
-
-
 /* $(document).ready(function() {
   for (var i = 1; i <= 163; i++) {
     var paddedIndex = pad(i, 3); // Call the pad function to format i with 3 digits
