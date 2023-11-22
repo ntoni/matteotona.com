@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -15,7 +15,8 @@
 	<!-- styles -->
 	<link rel="stylesheet" href="css/screen.css" type="text/css">
 	<link rel="stylesheet" href="css/print.css" type="text/css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="https://unpkg.com/@phosphor-icons/web"></script>
+	<link rel="stylesheet" href="/photoswipe/dist/photoswipe.css">
 
 	<!-- js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -31,12 +32,7 @@
 			$.get('intro.html',function(response){
           $('#intro').html(response);
       });
-			$.get('menu-projects.html', function(response) {
-				$('#nav-sub').html(response);
-			});
-			$.get('clients.html', function(response) {
-				$('#clients').html(response);
-			});
+			 
       $.get('footer.html',function(response){
           $('#footer').html(response);
       });
@@ -100,23 +96,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<meta name="twitter:description" content="UX & UI Designer" />
 	<meta name="twitter:url" content="https://www.matteotona.com/" />
 
-	<!-- apple -->
-	<link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-touch-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon-180x180.png">
+	
 
 	<!-- fav -->
-	<link rel="icon" type="image/png" href="/icons/favicon-192x192.png" sizes="192x192">
-	<link rel="icon" type="image/png" href="/icons/favicon-160x160.png" sizes="160x160">
-	<link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96">
-	<link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
-	<link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
@@ -127,18 +113,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="container">
 		<nav role="navigation" class="about" id="nav"></nav>
 		<div class="intro-container" id="intro"></div>
-		<nav class="sub-menu" id="nav-sub"></nav>
+		<nav class="sub-menu dynamic" id="nav-sub"></nav>
 		<main id="barba-wrapper">
 			<div class="barba-container" id="site-content">
 				<h1 class="intro"></h1>
 				<section class="about">
 					<div class="col-1">
-						<img class="about" src="https://www.matteotona.com/images/about.jpg" alt="Matteo Tona">
+						<img class="about" src="https://ik.imagekit.io/ntoni/matteo-tona-about.JPEG" alt="Matteo Tona">
 						<h1>Matteo Tona</h1>
-						<p>Graduated in 3D Animation Design in Milan, I'm actually an experienced CXO designer with over +10 years progressive experience delivering customised solution for major clients.
-							<p>Clients include Seeweb, CEMS, Setonix, DCG, VAO, Altruism, Oneday, Smartfood, Stroll, VoceAllOpera, ODCEC, Noone, Redooc and more.</p>
-							<p>I’m available for projects through my studio, the creatively named Ntoni Design</a>.</p>
-							<h2>Elsewhere</h2>
+						<h2>Visual and Brand Designer</h2>
+						<p>Main focus is on learning and innovation, ensuring cutting-edge solutions with impactful design experiences.</p>
+						<div class="desktop">
+							<h3>Elsewhere</h3>
 							<ul>
 								<li><span>Email</span> <span><a href="mailto:matteo.tona@gmail.com" target="_blank">matteo.tona@gmail.com</a></span></li>
 								<li><span>Behance</span> <span><a href="https://www.behance.net/matteotona" target="_blank">@ntoniph</a></span></li>
@@ -146,10 +132,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<li><span>Instagram</span> <span><a href="https://www.instagram.com/ntoniph/" target="_blank">@ntoniph</a></span></li>
 								<li><span>Linkedin</span> <span><a href="https://www.linkedin.com/in/matteotona/" target="_blank">Matteo Tona</a></span></li>
 							</ul>
-							<!-- <div class="spacer"></div> -->
+						</div>
+						<!-- <div class="spacer"></div> -->
 						</div>
 						<div class="col-2">
-							<h2 class="inline">Work Highlights</h2>
+							<h3 class="inline">Work Highlights</h3>
 							<a class="download-btn" href="/files/cv-matteo-tona.pdf" download>Download CV</a>
 							<ul class="highlights">
 								<li class="work"><span class="date">Today</span><span class="title"> Creative / UX Director <a class="wtitle"> Ntoni Design</a></span><span class="descr">Manage and coordinate graphic design projects from concept through completion, working closely with clients to create vision, conceive designs and consistently meet deadlines and requirements. Coordinate freelance designers, consultants and vendors to meet all project requirements. Create and conduct highly persuasive sales and marketing presentations. Expertly convert features to benefits to achieve client objectives.</span></li>
@@ -163,7 +150,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 								<li class="work"><span class="date">2014</span> <span class="title"> Graphic Designer <a class="wtitle">ZooCom</a></span><span class="descr">Develop corporate design and solution for marketing and collateral materials, including ads, logo design, websites.</span></li>
 
-								<li class="work"><span class="date">2013</span> <span class="title"> Brand and Web <a class="wtitle">Altruism</a></span><span class="descr">Created brand guidelines to enable brand consistency across campaigns and marketing programs.</span></li>
+								<li class="work"><span class="date">2013</span> <span class="title"> Brand and Web <a class="wtitle">Altruism</a></span><span class="descr">I've created brand guidelines to enable brand consistency across campaigns and marketing programs.</span></li>
 
 								<li class="work"><span class="date">2010 - 2015</span> <span class="title"> Web Designer <a class="wtitle">ScuolaZoo</a></span><span class="descr">Designed 3 editions school diary, collaborating with illustrators and writers</span></li>
 
@@ -175,6 +162,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<li><span><a href="http://www.itsosmilano.edu.it/" target="_blank">ITSOS Albe Steiner</a></span><span> - Milano</span></li>
 								<li><span>Listening</span> <span><a href="http://web.archive.org/web/20190428160515/https://open.spotify.com/user/fchimero/playlist/7zfDixCO7cxSU8MelakV0T?si=dKAHTIdTTnanwf9PGr1RGg">Ghostly Jukebox</a></span></li>
 							</ul> -->
+						</div>
+						<div class="mobile">
+							<h3>Elsewhere</h3>
+								<ul>
+									<li><span>Email</span> <span><a href="mailto:matteo.tona@gmail.com" target="_blank">matteo.tona@gmail.com</a></span></li>
+									<li><span>Behance</span> <span><a href="https://www.behance.net/matteotona" target="_blank">@ntoniph</a></span></li>
+									<li><span>Dribbble</span> <span><a href="https://dribbble.com/Ntoni" target="_blank">Matteo Tona</a></span></li>
+									<li><span>Instagram</span> <span><a href="https://www.instagram.com/ntoniph/" target="_blank">@ntoniph</a></span></li>
+									<li><span>Linkedin</span> <span><a href="https://www.linkedin.com/in/matteotona/" target="_blank">Matteo Tona</a></span></li>
+								</ul>
 						</div>
 				</section>
 			</div>

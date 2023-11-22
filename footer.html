@@ -1,3 +1,12 @@
-&copy; 2019 ·
-<a href="/feed.xml" class="no-barba">RSS</a>
-<a href="#top" class="top">&uarr;</a>
+<span>©
+    <span id='year'>
+       <script type='text/javascript'>
+        var current_year = (new Date()).getFullYear();
+        var year_node = document.getElementById('year');
+        year_node.innerHTML = '';
+        year_node.appendChild(document.createTextNode(current_year));
+      </script>
+    </span> ·
+    <a href="/feed.xml" class="no-barba">RSS</a>
+  </span>
+<a href="#top" class="top" aria-label="go to the Top"><i class="ph ph-arrow-up"></i></a>

@@ -1,27 +1,78 @@
-<ul class="naked">
-  <li class="logo">
-    <a href="index" id="Index">
-      <img src="images/ntoni-logo-25fps-claim.gif">
+<div class="naked">
+  <div class="social">
+    <a href="#_" id="nightmode" aria-label="toggle Nightmode"><i class="ph ph-moon-stars"></i></a>
+    <span class="nightip">Nightmode is active, based on your local time zone.</span>
+  </div>
+  <!-- <div id="google_translate_element"></div>
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    }
+</script>
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+  <div class="logo">
+    <a href="index.html" id="Index">
+      <img src="https://ik.imagekit.io/ntoni/ntoni logo.svg" alt="matteotona-logo">
       <h1>Matteo Tona</h1>
     </a>
-  </li>
-  <li class="item-text">
-    <ul>
-      <li>
-        <a href="index" class="intro limit project" id="Projects">Projects</a>
-      </li>
-      <li>
-        <a href="personal" class="intro limit" id="Personal">Personal</a>
-      </li>
-      <li>
-        <a href="about" class="intro limit" id="About">About</a>
-      </li>
-    </ul>
-  </li>
-  <li class="side-link">
-    <a target="_blank" id="Behance"><i class="fab fa-behance"></i></a>
-    <a target="_blank" id="Behance"><i class="fab fa-dribbble"></i></a>
-    <a href="#_" id="nightmode"><i class="far fa-moon"></i></a>
-    <span class="nightip">Nightmode is active, based on your local time zone.</span>
-  </li>
+  </div>
+  <div class="social">
+    <a target="_blank" id="burger">
+      <div id="menu">
+        <div id="pencet">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </a>
+    
+    <div id="main-menu" class="disabled">
+      <nav>
+        <div class="menu-container">
+          <div class="menu-item">
+            <span class="none"></span>
+            <a href="" id="about">About</a>
+          </div>
+          <div class="menu-item">
+            <span class="behance"></span>
+            <a href="#">Behance</a>
+          </div>
+          <div class="menu-item">
+            <span class="dribbble"></span>
+            <a href="#">Dribbble</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+  </div>
 </ul>
+<script>
+  const clickx= document.getElementById('pencet');
+  
+  clickx.addEventListener('click', function(){
+    clickx.classList.toggle('Diam');
+  });
+
+  var scrollEnabled = false;
+
+document.getElementById("burger").onclick = function() {
+  if (scrollEnabled) {
+    enableScroll();
+    document.getElementById("main-menu").className = "disabled";
+  } else {
+    disableScroll();
+    document.getElementById("main-menu").className = "enabled";
+  }
+  
+  scrollEnabled = !scrollEnabled; // Toggle the state
+};
+/* document.getElementById("about").addEventListener("click", function() {
+  enableScroll();
+}); */
+
+  </script>

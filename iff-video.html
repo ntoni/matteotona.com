@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -15,7 +15,8 @@
 	<!-- styles -->
 	<link rel="stylesheet" href="css/screen.css" type="text/css">
 	<link rel="stylesheet" href="css/print.css" type="text/css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="https://unpkg.com/@phosphor-icons/web"></script>
+	<link rel="stylesheet" href="/photoswipe/dist/photoswipe.css">
 
 	<!-- js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -34,9 +35,7 @@
 			$.get('menu-projects.html', function(response) {
 				$('#nav-sub').html(response);
 			});
-			$.get('clients.html', function(response) {
-				$('#clients').html(response);
-			});
+			 
       $.get('footer.html',function(response){
           $('#footer').html(response);
       });
@@ -100,23 +99,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<meta name="twitter:description" content="UX & UI Designer" />
 	<meta name="twitter:url" content="https://www.matteotona.com/" />
 
-	<!-- apple -->
-	<link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-touch-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon-180x180.png">
+	
 
 	<!-- fav -->
-	<link rel="icon" type="image/png" href="/icons/favicon-192x192.png" sizes="192x192">
-	<link rel="icon" type="image/png" href="/icons/favicon-160x160.png" sizes="160x160">
-	<link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96">
-	<link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
-	<link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
@@ -127,57 +116,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="container">
 		<nav role="navigation" class="prj" id="nav"></nav>
 		<div class="intro-container" id="intro"></div>
-		<nav class="sub-menu" id="nav-sub"></nav>
+		<nav class="sub-menu dynamic" id="nav-sub"></nav>
 		<main id="barba-wrapper">
 			<div class="barba-container" id="site-content">
-				<section class="grid two-col description">
-					<header>
-						<div class="title-intro">
-							<h2>Trailer - Italian Film Festival 2018</h2>
-							<span class="subline">
-								<a class="video descrz" href="projects-video">Video</a><span class="desc"> / Embassy of Italy in Kuala Lumpur</span>
-							</span>
-						</div>
-						<div class="sw">
+				<section class="description">
+					<div class="title-intro">
+						<h1>Embassy of Italy in Kuala Lumpur</h1>
+						<span class="subline">
+							<span class="desc">Italian Film Festival 2018</span>
+						</span>
+					</div>
+					<div class="sw">
+						<span class="subline">Tools & Languages</span>
+						<div class="icons">
 							<span class="premiere"></span>
-							<span class="audition"></span>
 						</div>
-						<div class="post">
-							<p>I created this mashup of 5 selected italian titles from various genres, which was shown in several cinemas during the Italian Film Festival 2018 in Kuala Lumpur, Malaysia.</p>
-						</div>
-					</header>
+					</div>
 				</section>
-				<section class="imagery">
-					<figure>
-						<video preload="yes" autoplay muted controls="yes" loop width="100%" height="auto" poster="https://www.matteotona.com/images/dcg/poster-iff.jpg">
-	            <source src="https://www.matteotona.com/images/dcg/IFF.mp4" type="video/mp4">
-							<source src="https://www.matteotona.com/images/dcg/IFF.webm" type="video/webm">
-						</video>
-					</figure>
-				</section>
-				<div class="projectrel">
-					<section class="related">
-						<div class="title">
-							<h2>More Projects</h2>
-						</div>
-						<div>
-							<a href="/design/npr-player/" class="projectlink">
-								<img src="https://ftc.imgix.net/design/npr-player/nprplayer-thumbnail-3x.jpg?w=300&amp;blur=100" data-sizes="100vw" alt="NPR Player" class="lazyload full">
-								<div>
-									NPR Player<span class="desc"> / Reshaping the cornerstone of NPR’s website</span>
-								</div>
-							</a>
-						</div>
-						<div>
-							<a href="/design/the-manual-vol4/" class="projectlink">
-								<img src="https://ftc.imgix.net/design/the-manual-vol4/manual-thumbnail-3x.jpg?w=300&amp;blur=100" data-sizes="100vw" alt="The Manual, Vol. 4" class="lazyload full">
-								<div>
-									The Manual, Vol. 4<span class="desc"> / Designing pages about web pages</span>
-								</div>
-							</a>
-						</div>
+				<section class="article">
+					<div class="post">
+						<h2>Challenge</h2>
+						<p>Create an engaging trailer mashup for the 2018 Italian Film Festival in Kuala Lumpur that would capture the essence of the festival and attract viewers to attend the screenings.</p>
+					</div>
+					<section class="imagery">
+						<figure>
+							<video preload="yes" autoplay muted controls="yes" loop width="100%" height="auto" poster="https://www.matteotona.com/images/dcg/poster-iff.jpg">
+					<source src="https://www.matteotona.com/images/dcg/IFF.mp4" type="video/mp4">
+								<source src="https://www.matteotona.com/images/dcg/IFF.webm" type="video/webm">
+							</video>
+						</figure>
 					</section>
-				</div>
+					<div class="post">
+						<h2>Solution</h2>
+						<p>					I worked closely with the Italian Film Festival team to understand their needs and develop a trailer mashup that would meet their requirements. The following tasks were completed:
+							Review and select footage: I reviewed a selection of footage from the festival's five featured films, "Stay Away From Me," "Italian Race," "Welcome To The South," "A Golden Boy," and "White As Milk, Red As Blood." I selected footage that was visually appealing, representative of the different genres of the films, and that would convey the excitement and anticipation of the festival.
+							Editing and music: I edited the selected footage together in a fast-paced and dynamic style. I also added music that was upbeat, energetic, and reflective of the Italian culture.
+							Graphics and branding: I added graphics and branding elements to the trailer mashup, including the Italian Film Festival logo and the dates and locations of the screenings.</p>
+					</div>
+				</section>
+			</div>
 		</main>
 		<section class="related clients off" id="clients"></section>
 		<footer role="contentinfo" id="footer"></footer>

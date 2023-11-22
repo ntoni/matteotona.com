@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -15,7 +15,8 @@
 	<!-- styles -->
 	<link rel="stylesheet" href="css/screen.css" type="text/css">
 	<link rel="stylesheet" href="css/print.css" type="text/css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="https://unpkg.com/@phosphor-icons/web"></script>
+	<link rel="stylesheet" href="/photoswipe/dist/photoswipe.css">
 
 	<!-- js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -34,9 +35,7 @@
 			$.get('menu-projects.html', function(response) {
 				$('#nav-sub').html(response);
 			});
-			$.get('clients.html', function(response) {
-				$('#clients').html(response);
-			});
+			 
       $.get('footer.html',function(response){
           $('#footer').html(response);
       });
@@ -100,23 +99,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<meta name="twitter:description" content="UX & UI Designer" />
 	<meta name="twitter:url" content="https://www.matteotona.com/" />
 
-	<!-- apple -->
-	<link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-touch-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon-180x180.png">
+	
 
 	<!-- fav -->
-	<link rel="icon" type="image/png" href="/icons/favicon-192x192.png" sizes="192x192">
-	<link rel="icon" type="image/png" href="/icons/favicon-160x160.png" sizes="160x160">
-	<link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96">
-	<link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16">
-	<link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
@@ -127,58 +116,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="container">
 		<nav role="navigation" class="prj" id="nav"></nav>
 		<div class="intro-container" id="intro"></div>
-		<nav class="sub-menu" id="nav-sub"></nav>
+		<nav class="sub-menu dynamic" id="nav-sub"></nav>
 		<main id="barba-wrapper">
 			<div class="barba-container" id="site-content">
-				<section class="grid two-col description">
-					<header>
-						<div class="title-intro">
-							<h2>Branding</h2>
-							<span class="subline">
-								<a class="brands descrz" href="projects-brands">Brands</a>, <a class="ads descrz" href="projects-ads">Ads</a><span class="desc"> / Ordine dei Dottori Commercialisti ed Esperti Contabili di Milano</span>
-							</span>
-						</div>
-						<div class="sw">
+				<section class="description">
+					<div class="title-intro">
+						<h1>Odcec Milano - Annual Event</h1>
+						<span class="subline">
+							<span class="desc">Branding, Print</span>
+						</span>
+					</div>
+					<div class="sw">
+						<span class="subline">Tools & Languages</span>
+						<div class="icons">
 							<span class="illustrator"></span>
 						</div>
-						<div class="post">
-							<p>ODCEC is the Order of Chartered Accountants and Auditors of Milan. I created the new communication and logo for the their yearly event.</p>
-						</div>
-					</header>
+					</div>
 				</section>
-				<section class="imagery">
-					<figure>
-						<img src="https://www.matteotona.com/images/clients/odcec-event-1.jpg" data-sizes="100vw" class=" lazyloaded" sizes="100vw" >
-					</figure>
-				</section>
-				<section class="imagery">
-					<figure>
-						<img src="https://www.matteotona.com/images/clients/odcec-event-2.gif" data-sizes="100vw" class=" lazyloaded" sizes="100vw" >
-					</figure>
-				</section>
-				<div class="projectrel">
-					<section class="related">
-						<div class="title">
-							<h2>More Projects</h2>
-						</div>
-						<div>
-							<a href="/design/npr-player/" class="projectlink">
-								<img src="https://ftc.imgix.net/design/npr-player/nprplayer-thumbnail-3x.jpg?w=300&amp;blur=100" data-sizes="100vw" alt="NPR Player" class="lazyload full">
-								<div>
-									NPR Player<span class="desc"> / Reshaping the cornerstone of NPR’s website</span>
-								</div>
-							</a>
-						</div>
-						<div>
-							<a href="/design/the-manual-vol4/" class="projectlink">
-								<img src="https://ftc.imgix.net/design/the-manual-vol4/manual-thumbnail-3x.jpg?w=300&amp;blur=100" data-sizes="100vw" alt="The Manual, Vol. 4" class="lazyload full">
-								<div>
-									The Manual, Vol. 4<span class="desc"> / Designing pages about web pages</span>
-								</div>
-							</a>
-						</div>
+				<section class="article">
+					<div class="post">
+						 
+						<p>ODCEC Milano is the professional association of accountants and tax consultants in Milan, Italy. It has over 9,950 members and provides a range of services to businesses and individuals</p>
+					</div>
+					<section class="imagery">
+						<figure>
+							<img src="https://www.matteotona.com/images/clients/odcec-event-1.jpg" data-sizes="100vw" class=" lazyloaded" sizes="100vw" >
+						</figure>
 					</section>
-				</div>
+					<div class="post">
+						<h2>Challenge</h2>
+						<p>Design an appealing logo for the ODCEC Milano annual event, reflecting the theme "A look to the future to build the present."</p>
+					</div>
+					<section class="imagery">
+						<figure>
+							<img src="https://www.matteotona.com/images/clients/odcec-event-2.gif" data-sizes="100vw" class=" lazyloaded" sizes="100vw" >
+						</figure>
+					</section>
+					<div class="post">
+						<h2>Results</h2>
+						<p>It is modern, dynamic, and conveys a clear message about the importance of looking to the future to build the present.</p>
+					</div>
+				</section>
+			</div>
 		</main>
 		<section class="related clients off" id="clients"></section>
 		<footer role="contentinfo" id="footer"></footer>
