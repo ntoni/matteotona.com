@@ -3232,7 +3232,7 @@ body{
   background-color:#ffffff;
 }
 .nightmode, .nightmode a, .nightmode nav a, .nightmode .description h2{
-  color:#ffffff;
+  color:#ffffff!important
 }
 .nightmode a:hover, .nightmode a:active, .nightmode a.active{
     color:#cccccc!important;
@@ -3265,4 +3265,7 @@ body.nightmode{
 .nightmode .about ul.highlights{
   background-color: #1a1d22;
   transition: background .3s;
+}
+.nightmode #main-menu{
+  background-color: #090909e0;
 }
