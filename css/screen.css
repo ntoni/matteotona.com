@@ -1659,7 +1659,10 @@ section.article{
 }
 .behance{
   background:url(https://ik.imagekit.io/ntoni/software/behance-color.svg);
-} 
+}
+.linkedin{
+  background:url(https://ik.imagekit.io/ntoni/software/linkedin-color.svg);
+}
 .dribbble{
   background:url(https://ik.imagekit.io/ntoni/software/dribbble-color.svg);
   transform: scale(1.5)!important;
