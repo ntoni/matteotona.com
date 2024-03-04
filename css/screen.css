@@ -1827,6 +1827,12 @@ img.about{
 .about ul.highlights{
  
 }
+.about h3{
+  font-weight: 600;
+}
+.about .desktop h3{
+  margin-top: 40px;
+}
 .barba-container section.about ul li span.date{
   color:#a4a4a4;
   padding-right: 10px;
@@ -1887,6 +1893,13 @@ img.about{
 .about .inline{
   display: inline-block;
 }
+.about p.bold{
+  font-weight: 600;
+  font-size: 24px!important;
+}
+.about p.bold span{
+  color: #a4a4a4;
+}
 /* TIMELINE */
 .barba-container section.about ul.highlights li:before{
   content: "\2022";
@@ -1898,10 +1911,13 @@ img.about{
   transition: ease-in-out 0.4s;
 }
 .nightmode .barba-container section.about ul.highlights li:before{
-  color: #292929;
+  color: #464646;
 }
 .nightmode .barba-container section.about ul li span.descr{
-  border-left-color: #292929;
+  border-left-color: #464646;
+}
+.nightmode .about .col-2 {
+  background-color: #282b33;
 }
 section.about p, section.about ul{
   font-size: 18px;
@@ -2130,6 +2146,9 @@ ul.talk small{
 }
 .about .mobile{
   display: none;
+}
+.about ul{
+  padding: 0!important;
 }
 .about .desktop{
   display: block;
@@ -3312,7 +3331,6 @@ body.nightmode{
   transition: background .3s;
 }
 .nightmode .about ul.highlights{
-  background-color: #1a1d22;
   transition: background .3s;
 }
 .nightmode #main-menu{
